@@ -215,6 +215,55 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/LN_05_Tactical_Asset_Allocation_MR.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-download-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
     <i class="fas fa-download"></i>
@@ -430,7 +479,7 @@ document.write(`
 <section id="subcategories-of-dynamic-asset-allocation">
 <h2>1. Subcategories of Dynamic Asset Allocation<a class="headerlink" href="#subcategories-of-dynamic-asset-allocation" title="Permalink to this headline">#</a></h2>
 <div style="text-align: center;">
-    <img src="TeachingNotes_Lorenzo.png" alt="Teaching Notes Lorenzo" style="max-width: 100%;">
+    <img src="/Users/martinrinaldi/Dropbox/0. PhD in Finance/3. Work/PMF/TacticalAssetAllocation/TeachingNotes_Lorenzo.png" alt="Teaching Notes Lorenzo" style="max-width: 50%;">
 </div>
 </section>
 <section id="the-basic-contrarian-taa-principle-as-applied-to-taa">
@@ -674,16 +723,9 @@ K_{1t}&amp;=\frac{E_{t} [r_{S}]-E[r_{B}]}{\sigma_{B}^2+\sigma_{S}^2-2\sigma_{BS}
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">corr</span> <span class="o">=</span> <span class="mf">0.1</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">RRT</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
-<span class="ne">----&gt; </span><span class="mi">9</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;K0 is:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">K0</span><span class="p">(</span><span class="n">sigma_b</span><span class="p">,</span><span class="n">sigma_s</span><span class="p">,</span><span class="n">corr</span><span class="p">),</span><span class="mi">3</span><span class="p">))</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;K1 is:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">K1</span><span class="p">(</span><span class="n">rb</span><span class="p">,</span><span class="n">rs</span><span class="p">,</span><span class="n">sigma_b</span><span class="p">,</span><span class="n">sigma_s</span><span class="p">,</span><span class="n">corr</span><span class="p">),</span><span class="mi">3</span><span class="p">))</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="nb">print</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;The stock weight X[st] chosen by the investor is:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">stock_weight</span><span class="p">(</span><span class="n">rb</span><span class="p">,</span> <span class="n">rs</span><span class="p">,</span> <span class="n">sigma_b</span><span class="p">,</span> <span class="n">sigma_s</span><span class="p">,</span> <span class="n">corr</span><span class="p">,</span> <span class="n">RRT</span><span class="p">),</span> <span class="mi">3</span><span class="p">))</span>
-
-<span class="ne">NameError</span>: name &#39;np&#39; is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>K0 is: 0.712
+K1 is: 0.169
+The stock weight X[st] chosen by the investor is: 0.345
 </pre></div>
 </div>
 </div>
@@ -778,7 +820,7 @@ K_{1t}&amp;=\frac{E_{t} [r_{S}]-E[r_{B}]}{\sigma_{B}^2+\sigma_{S}^2-2\sigma_{BS}
     background-color: #e1f5fe;
 }
 </style><div style="text-align: center;">
-    <img src="Mean_Reversion.png" alt="Mean Reversion" style="max-width: 100%;">
+    <img src="/Users/martinrinaldi/Dropbox/0. PhD in Finance/3. Work/PMF/TacticalAssetAllocation/Mean_Reversion.png" alt="Mean Reversion" style="max-width: 100%;">
 </div><div class="custom-container">
 <p>Thus, as investors’ attitude towards bearing risk changes, the “market price of risk / risk premium” (<span class="math notranslate nohighlight">\(\lambda\)</span> in the CAPM) changes. <span class="math notranslate nohighlight">\(\lambda\)</span> is positively related to the expected return on the stock market, <span class="math notranslate nohighlight">\(E[r_{S}]\)</span>.</p>
 <ul class="simple">
@@ -3838,7 +3880,7 @@ We can use this long-run SAA mix in the Sharpe Model to determine the client’s
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
+            repo: "executablebooks/jupyter-book",
             ref: "master",
         },
         codeMirrorConfig: {
