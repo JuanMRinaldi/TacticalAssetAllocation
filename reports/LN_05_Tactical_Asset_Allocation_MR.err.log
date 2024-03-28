@@ -17,6 +17,12 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
+assets = {
+    'Corp': (riskfactors_filtered['corpr']-riskfactors_filtered['tb30'])*12,
+    'VW': (riskfactors_filtered['vwretx']-riskfactors_filtered['tb30'])*12,
+    'EW': (riskfactors_filtered['ewretx']-riskfactors_filtered['tb30'])*12,
+}
+
 def plot_predictive_regression(X, assets, predictors, training_period, testing_period, periods):
     """
     Generate plots illustrating the in-sample and out-of-sample predictive regression R^2 values
@@ -63,19 +69,52 @@ plot_predictive_regression(X, assets, predictors, training_period, testing_perio
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mAttributeError[0m                            Traceback (most recent call last)
-Cell [0;32mIn[19], line 43[0m
-[1;32m     40[0m testing_period [38;5;241m=[39m ([38;5;124m'[39m[38;5;124m1972[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124m1987[39m[38;5;124m'[39m)
-[1;32m     42[0m [38;5;66;03m# Execute the plotting function[39;00m
-[0;32m---> 43[0m [43mplot_predictive_regression[49m[43m([49m[43mX[49m[43m,[49m[43m [49m[43massets[49m[43m,[49m[43m [49m[43mpredictors[49m[43m,[49m[43m [49m[43mtraining_period[49m[43m,[49m[43m [49m[43mtesting_period[49m[43m,[49m[43m [49m[43mperiods[49m[43m)[49m
+[0;31mKeyError[0m                                  Traceback (most recent call last)
+Cell [0;32mIn[19], line 49[0m
+[1;32m     46[0m testing_period [38;5;241m=[39m ([38;5;124m'[39m[38;5;124m1972[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124m1987[39m[38;5;124m'[39m)
+[1;32m     48[0m [38;5;66;03m# Execute the plotting function[39;00m
+[0;32m---> 49[0m [43mplot_predictive_regression[49m[43m([49m[43mX[49m[43m,[49m[43m [49m[43massets[49m[43m,[49m[43m [49m[43mpredictors[49m[43m,[49m[43m [49m[43mtraining_period[49m[43m,[49m[43m [49m[43mtesting_period[49m[43m,[49m[43m [49m[43mperiods[49m[43m)[49m
 
-Cell [0;32mIn[19], line 17[0m, in [0;36mplot_predictive_regression[0;34m(X, assets, predictors, training_period, testing_period, periods)[0m
-[1;32m     14[0m training_start, training_end [38;5;241m=[39m training_period
-[1;32m     15[0m testing_start, testing_end [38;5;241m=[39m testing_period
-[0;32m---> 17[0m [38;5;28;01mfor[39;00m asset_name, Y [38;5;129;01min[39;00m [43massets[49m[38;5;241;43m.[39;49m[43mitems[49m():
-[1;32m     18[0m     Y_train [38;5;241m=[39m Y[training_start:training_end]
-[1;32m     19[0m     Y_test [38;5;241m=[39m Y[testing_start:testing_end]
+Cell [0;32mIn[19], line 30[0m, in [0;36mplot_predictive_regression[0;34m(X, assets, predictors, training_period, testing_period, periods)[0m
+[1;32m     27[0m X_test [38;5;241m=[39m X[testing_start:testing_end]
+[1;32m     29[0m [38;5;66;03m# Running predictive regression for the training period[39;00m
+[0;32m---> 30[0m train_results [38;5;241m=[39m [43mpredictive_regression[49m[43m([49m[43mX_train[49m[43m,[49m[43m [49m[43mY_train[49m[43m,[49m[43m [49m[43mpredictors[49m[43m,[49m[43m [49m[43mperiods[49m[43m)[49m
+[1;32m     31[0m test_results [38;5;241m=[39m predictive_regression(X_test, Y_test, predictors, periods)
+[1;32m     33[0m [38;5;66;03m# Assuming the focus is on annual ('Y') predictions for simplicity in visualization[39;00m
 
-[0;31mAttributeError[0m: 'numpy.ndarray' object has no attribute 'items'
-AttributeError: 'numpy.ndarray' object has no attribute 'items'
+Cell [0;32mIn[16], line 28[0m, in [0;36mpredictive_regression[0;34m(X, Y, predictors, periods)[0m
+[1;32m     15[0m [38;5;250m[39m[38;5;124;03m"""[39;00m
+[1;32m     16[0m [38;5;124;03mRun predictive regressions and return a DataFrame containing regression results including R^2.[39;00m
+[1;32m     17[0m 
+[0;32m   (...)[0m
+[1;32m     25[0m [38;5;124;03m    pd.DataFrame: DataFrame containing regression results with R^2 for each model and predictive horizon.[39;00m
+[1;32m     26[0m [38;5;124;03m"""[39;00m
+[1;32m     27[0m results [38;5;241m=[39m []
+[0;32m---> 28[0m X_lagged [38;5;241m=[39m [43mX[49m[43m[[49m[43mpredictors[49m[43m][49m[38;5;241m.[39mshift([38;5;241m1[39m)  [38;5;66;03m# Lagging predictors by one period for predictability[39;00m
+[1;32m     30[0m [38;5;28;01mfor[39;00m period_name, shift [38;5;129;01min[39;00m periods[38;5;241m.[39mitems():
+[1;32m     31[0m     [38;5;66;03m# Prepare Y based on the period[39;00m
+[1;32m     32[0m     Y_shifted [38;5;241m=[39m Y[38;5;241m.[39mshift([38;5;241m-[39mshift)
+
+File [0;32m~/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py:3813[0m, in [0;36mDataFrame.__getitem__[0;34m(self, key)[0m
+[1;32m   3811[0m     [38;5;28;01mif[39;00m is_iterator(key):
+[1;32m   3812[0m         key [38;5;241m=[39m [38;5;28mlist[39m(key)
+[0;32m-> 3813[0m     indexer [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mcolumns[49m[38;5;241;43m.[39;49m[43m_get_indexer_strict[49m[43m([49m[43mkey[49m[43m,[49m[43m [49m[38;5;124;43m"[39;49m[38;5;124;43mcolumns[39;49m[38;5;124;43m"[39;49m[43m)[49m[[38;5;241m1[39m]
+[1;32m   3815[0m [38;5;66;03m# take() does not accept boolean indexers[39;00m
+[1;32m   3816[0m [38;5;28;01mif[39;00m [38;5;28mgetattr[39m(indexer, [38;5;124m"[39m[38;5;124mdtype[39m[38;5;124m"[39m, [38;5;28;01mNone[39;00m) [38;5;241m==[39m [38;5;28mbool[39m:
+
+File [0;32m~/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py:6070[0m, in [0;36mIndex._get_indexer_strict[0;34m(self, key, axis_name)[0m
+[1;32m   6067[0m [38;5;28;01melse[39;00m:
+[1;32m   6068[0m     keyarr, indexer, new_indexer [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39m_reindex_non_unique(keyarr)
+[0;32m-> 6070[0m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_raise_if_missing[49m[43m([49m[43mkeyarr[49m[43m,[49m[43m [49m[43mindexer[49m[43m,[49m[43m [49m[43maxis_name[49m[43m)[49m
+[1;32m   6072[0m keyarr [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39mtake(indexer)
+[1;32m   6073[0m [38;5;28;01mif[39;00m [38;5;28misinstance[39m(key, Index):
+[1;32m   6074[0m     [38;5;66;03m# GH 42790 - Preserve name from an Index[39;00m
+
+File [0;32m~/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py:6133[0m, in [0;36mIndex._raise_if_missing[0;34m(self, key, indexer, axis_name)[0m
+[1;32m   6130[0m     [38;5;28;01mraise[39;00m [38;5;167;01mKeyError[39;00m([38;5;124mf[39m[38;5;124m"[39m[38;5;124mNone of [[39m[38;5;132;01m{[39;00mkey[38;5;132;01m}[39;00m[38;5;124m] are in the [[39m[38;5;132;01m{[39;00maxis_name[38;5;132;01m}[39;00m[38;5;124m][39m[38;5;124m"[39m)
+[1;32m   6132[0m not_found [38;5;241m=[39m [38;5;28mlist[39m(ensure_index(key)[missing_mask[38;5;241m.[39mnonzero()[[38;5;241m0[39m]][38;5;241m.[39munique())
+[0;32m-> 6133[0m [38;5;28;01mraise[39;00m [38;5;167;01mKeyError[39;00m([38;5;124mf[39m[38;5;124m"[39m[38;5;132;01m{[39;00mnot_found[38;5;132;01m}[39;00m[38;5;124m not in index[39m[38;5;124m"[39m)
+
+[0;31mKeyError[0m: "['dp'] not in index"
+KeyError: "['dp'] not in index"
 
