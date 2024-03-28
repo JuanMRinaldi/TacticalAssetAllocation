@@ -674,9 +674,16 @@ K_{1t}&amp;=\frac{E_{t} [r_{S}]-E[r_{B}]}{\sigma_{B}^2+\sigma_{S}^2-2\sigma_{BS}
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>K0 is: 0.712
-K1 is: 0.169
-The stock weight X[st] chosen by the investor is: 0.345
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">corr</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">RRT</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
+<span class="ne">----&gt; </span><span class="mi">9</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;K0 is:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">K0</span><span class="p">(</span><span class="n">sigma_b</span><span class="p">,</span><span class="n">sigma_s</span><span class="p">,</span><span class="n">corr</span><span class="p">),</span><span class="mi">3</span><span class="p">))</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;K1 is:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">K1</span><span class="p">(</span><span class="n">rb</span><span class="p">,</span><span class="n">rs</span><span class="p">,</span><span class="n">sigma_b</span><span class="p">,</span><span class="n">sigma_s</span><span class="p">,</span><span class="n">corr</span><span class="p">),</span><span class="mi">3</span><span class="p">))</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="nb">print</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;The stock weight X[st] chosen by the investor is:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">stock_weight</span><span class="p">(</span><span class="n">rb</span><span class="p">,</span> <span class="n">rs</span><span class="p">,</span> <span class="n">sigma_b</span><span class="p">,</span> <span class="n">sigma_s</span><span class="p">,</span> <span class="n">corr</span><span class="p">,</span> <span class="n">RRT</span><span class="p">),</span> <span class="mi">3</span><span class="p">))</span>
+
+<span class="ne">NameError</span>: name &#39;np&#39; is not defined
 </pre></div>
 </div>
 </div>
