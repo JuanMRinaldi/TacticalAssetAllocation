@@ -387,19 +387,6 @@
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="taa-definitions-of-saa-taa-and-iaa">
 <h1>1. TAA: Definitions of SAA, TAA and IAA<a class="headerlink" href="#taa-definitions-of-saa-taa-and-iaa" title="Permalink to this heading">#</a></h1>
-</div>
-<style>
-.custom-container {
-    padding: 15px;
-    border: 1px solid #2196f3;
-    margin: auto;
-    max-width: 1500px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    color: #000000;
-    background-color: #e1f5fe;
-}
-</style><div class="custom-container">
 <section id="taa-william-sharpe-s-characterization-of-saa-taa-and-iaa">
 <h2>TAA: William Sharpe’s characterization of SAA, TAA and IAA<a class="headerlink" href="#taa-william-sharpe-s-characterization-of-saa-taa-and-iaa" title="Permalink to this heading">#</a></h2>
 </div>
@@ -419,19 +406,19 @@
 <blockquote>
 <div><p>For TAA: Go back to point A</p>
 <blockquote>
-<div><p>Adjust <strong>expectations</strong> about asset returns</p>
+<div><p>Adjust <strong>expectations</strong> about asset returns.</p>
 </div></blockquote>
 </div></blockquote>
 <blockquote>
 <div><p>For SAA: Rebalance to SAA weights in point B</p>
 <blockquote>
-<div><p>Adjust portfolio <strong>weights</strong></p>
+<div><p>Adjust portfolio <strong>weights</strong>.</p>
 </div></blockquote>
 </div></blockquote>
 <blockquote>
 <div><p>For IAA: Go back to point C</p>
 <blockquote>
-<div><p>Update <strong>preferences</strong> (e.g., risk tolerance) as a result of change in wealth</p>
+<div><p>Update <strong>preferences</strong> (e.g., risk tolerance) as a result of change in wealth.</p>
 </div></blockquote>
 </div></blockquote>
 </div>
@@ -455,20 +442,21 @@
 </ul>
 <p>The investor chooses <span class="math notranslate nohighlight">\(X_{st}\)</span> as the proportion invested in stock at date <span class="math notranslate nohighlight">\(t\)</span>, with <span class="math notranslate nohighlight">\(1-X_{st}\)</span> invested in bonds, to maximize the investor’s expected utility, with a <strong>relative risk tolerance</strong> (<span class="math notranslate nohighlight">\(RRT[W_{t}]\)</span>), which depends upon the investor’s wealth, <span class="math notranslate nohighlight">\(W_{t}\)</span> at date <span class="math notranslate nohighlight">\(t\)</span>.</p>
 <p><span class="math notranslate nohighlight">\(RRT[W_{t}]\)</span> increases with <span class="math notranslate nohighlight">\(W_{t}\)</span>: as wealth goes up, an investor gets more aggressive, i.e., is willing to take more risk.</p>
-<p>The portfolio choice problem for the investor:
-$<span class="math notranslate nohighlight">\(\max_{X_{st}} E[R_{t}] -  \frac{1}{2RRT[W_{t}]} V[R_{t}]\)</span>$</p>
+<p>The portfolio choice problem for the investor:</p>
+<div class="math notranslate nohighlight">
+\[\max_{X_{st}} E[R_{t}] -  \frac{1}{2RRT[W_{t}]} V[R_{t}], \]</div>
 <p>where <span class="math notranslate nohighlight">\(E[R_{t}] = X_{st} \cdot E[r_{S}] + (1-X_{st}) \cdot E[r_{B}]\)</span>, and <span class="math notranslate nohighlight">\(V[R_{t}] = X_{st}^{2}\sigma_{S}^{2} + (1-X_{st})^{2}\sigma_{B}^{2} + 2X_{st}(1-X_{st})\sigma_{BS}\)</span></p>
 <p>Take first order condition on <span class="math notranslate nohighlight">\(X_{st}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[E[r_{S}] - E[r_{B}] -\frac{1}{2RRT[W_{t}]}\Big(2X_{st}\sigma_{S}^{2} + 2(1-X_{st})\sigma_{B}^{2} - 4X_{st}(1-X_{st})\sigma_{BS} + 2\sigma_{BS} - 2\sigma_{B}^{2}\Big) = 0\]</div>
 <p>The solution takes the following form:</p>
 <div class="math notranslate nohighlight">
-\[X_{st}=K_{0}+K_{1t} \cdot RRT[W_{t}]\]</div>
-<p>Where <span class="math notranslate nohighlight">\(K_{0}\)</span> and <span class="math notranslate nohighlight">\(K_{1t}\)</span> are constants given by</p>
-<p>\begin{align*}
-K_{0}&amp;=\frac{\sigma_{B}^2-\sigma_{BS}}{\sigma_{B}^2+\sigma_{S}^2-2\sigma_{BS}}\
-K_{1t}&amp;=\frac{E_{t} [r_{S}]-E[r_{B}]}{\sigma_{B}^2+\sigma_{S}^2-2\sigma_{BS}}
-\end{align*}</p>
+\[X_{st}=K_{0}+K_{1t} \cdot RRT[W_{t}], \]</div>
+<p>where <span class="math notranslate nohighlight">\(K_{0}\)</span> and <span class="math notranslate nohighlight">\(K_{1t}\)</span> are constants given by</p>
+<div class="math notranslate nohighlight">
+\[K_{0}=\frac{\sigma_{B}^2-\sigma_{BS}}{\sigma_{B}^2+\sigma_{S}^2-2\sigma_{BS}}\]</div>
+<div class="math notranslate nohighlight">
+\[K_{1t}=\frac{E_{t} [r_{S}]-E[r_{B}]}{\sigma_{B}^2+\sigma_{S}^2-2\sigma_{BS}}\]</div>
 <p><strong>SAA Investing</strong>:</p>
 <p><span class="math notranslate nohighlight">\(K_{0}\)</span>, <span class="math notranslate nohighlight">\(K_{1t}\)</span> and <span class="math notranslate nohighlight">\(RRT[W_{t}]\)</span> are all taken as constant and unchanging over time under SAA. This assumes:</p>
 <blockquote>
@@ -762,7 +750,7 @@ The stock weight X[st] chosen by the investor is: 0.345
 <li><p>At an economic peak, investors’ income is higher than their desired consumption, so all investors seek investments: this drives prices of risky assets up and expected returns down.</p></li>
 <li><p>At an economic trough, investors’ income is less than their desired consumption, so they must liquidate their investments to consume; this drives prices of risky assets down and expected returns up. This links expected returns (like the ERP) to the economic cycle: high expected returns at economic troughs and low expected returns at economic peaks.</p></li>
 </ul>
-<p>Most simply: ERP varies inversely with price: low price &lt;=&gt; high ERP (and vice-versa).</p>
+<p><strong>Most simply</strong>: ERP varies inversely with price: low price &lt;=&gt; high ERP (and vice-versa).</p>
 <p>FF use three predictor variables:</p>
 <ul class="simple">
 <li><p><strong>DP = dividend yield on all NYSE stocks = Dividend/Price</strong></p></li>
@@ -775,7 +763,7 @@ So, low prices =&gt; high DP =&gt; high expected returns.</p>
 <li><p><strong>DEF = AllLTYld - AaaLTYld</strong></p></li>
 </ul>
 <blockquote>
-<div><p>the yield on a portfolio of 100 (government (riskless) and corporate (risky)) long-term maturity bonds - the yield on a portfolio of long-term low-risk (Aaa rated) bonds.</p>
+<div><p>The yield on a portfolio of 100 (government (riskless) and corporate (risky)) long-term maturity bonds - the yield on a portfolio of long-term low-risk (Aaa rated) bonds.</p>
 </div></blockquote>
 <blockquote>
 <div><p>Since there is default risk in the AllLTYld but none in the AaaLTYld, DEF is the default (or credit) spread. Low prices for risky bonds means high risky bond yields, which means a high DEF. But, low junk bond prices mean high expected returns on junk bonds (and, it is hypothesized, on stock returns as well).</p>
@@ -787,7 +775,7 @@ So, low prices =&gt; high DP =&gt; high expected returns.</p>
 <li><p><strong>TERM = AaaLTYld - TBillYld</strong></p></li>
 </ul>
 <blockquote>
-<div><p>the yield on a long-term riskless bond portfolio minus the yield on a short-term riskless bond portfolio.</p>
+<div><p>The yield on a long-term riskless bond portfolio minus the yield on a short-term riskless bond portfolio.</p>
 </div></blockquote>
 <blockquote>
 <div><p>This is called the “term spread” and represents the slope of the yield curve. Empirically, a steep yield curve (a high TERM) occurs at economic troughs; expected returns are higher at economic troughs. And, at economic peaks, the yield curve is flat or sometimes even inverted; economic peaks feature low expected returns.</p>
@@ -1175,7 +1163,7 @@ So, low prices =&gt; high DP =&gt; high expected returns.</p>
 <h2>Fama-French Paper Result 1<a class="headerlink" href="#fama-french-paper-result-1" title="Permalink to this heading">#</a></h2>
 <p><strong>DP and DEF are persistent, TERM is not.</strong></p>
 <ul class="simple">
-<li><p>Both DP and DEF are <em>autocorrelated with lags</em>. This means that <span class="math notranslate nohighlight">\(Corr(DP_{𝑡} ,DP_{𝑡 +1})&gt;0\)</span>, but so is <span class="math notranslate nohighlight">\(Corr(DP_{𝑡} ,DP_{𝑡 +2})&gt;0\)</span>, and so is <span class="math notranslate nohighlight">\(Corr(DP_{𝑡} ,DP_{𝑡 +3})&gt;0\)</span>, etc., out to 8 annual lags.</p></li>
+<li><p>Both DP and DEF are <em>autocorrelated with lags</em>. This means that <span class="math notranslate nohighlight">\(Corr(DP_t, DP_{t+1}) &gt; 0 \)</span>, but so is <span class="math notranslate nohighlight">\( Corr(DP_t, DP_{t+2}) &gt; 0 \)</span>, and so is <span class="math notranslate nohighlight">\( Corr(DP_t, DP_{t+3}) &gt; 0 \)</span>, etc., out to 8 annual lags.</p></li>
 <li><p>Same with DEF. This means that when DP or DEF are above/below their means, they tend to stay there for quite a while.</p></li>
 <li><p>TERM has positive autocorrelation, but only out to 2 annual lags.</p></li>
 <li><p>Another interpretation: DP and DEF have long frequencies, TERM has a short frequency.</p></li>
