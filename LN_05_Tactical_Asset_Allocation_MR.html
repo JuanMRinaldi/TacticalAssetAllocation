@@ -478,9 +478,21 @@ document.write(`
 <h1>Outline<a class="headerlink" href="#outline" title="Permalink to this headline">#</a></h1>
 <section id="subcategories-of-dynamic-asset-allocation">
 <h2>1. Subcategories of Dynamic Asset Allocation<a class="headerlink" href="#subcategories-of-dynamic-asset-allocation" title="Permalink to this headline">#</a></h2>
-<div style="text-align: center;">
-    <img src="/Users/martinrinaldi/Dropbox/0. PhD in Finance/3. Work/PMF/TacticalAssetAllocation/TeachingNotes_Lorenzo.png" alt="Teaching Notes Lorenzo" style="max-width: 50%;">
 </div>
+<style>
+.custom-container {
+    padding: 15px;
+    border: 1px solid #2196f3;
+    margin: auto;
+    max-width: 1500px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #000000;
+    background-color: #e1f5fe;
+}
+</style><div style="text-align: center;">
+    <img src="/Users/martinrinaldi/Dropbox/0. PhD in Finance/3. Work/PMF/TacticalAssetAllocation/TeachingNotes_Lorenzo.png" alt="Teaching Notes Lorenzo" style="max-width: 50%;">
+</div><div class="custom-container">
 </section>
 <section id="the-basic-contrarian-taa-principle-as-applied-to-taa">
 <h2>2. The Basic ‘’Contrarian’’ TAA Principle as Applied to TAA<a class="headerlink" href="#the-basic-contrarian-taa-principle-as-applied-to-taa" title="Permalink to this headline">#</a></h2>
@@ -820,7 +832,7 @@ The stock weight X[st] chosen by the investor is: 0.345
     background-color: #e1f5fe;
 }
 </style><div style="text-align: center;">
-    <img src="/Users/martinrinaldi/Dropbox/0. PhD in Finance/3. Work/PMF/TacticalAssetAllocation/Mean_Reversion.png" alt="Mean Reversion" style="max-width: 100%;">
+    <img src="/Users/martinrinaldi/Dropbox/0. PhD in Finance/3. Work/PMF/TacticalAssetAllocation/Mean_Reversion.png" alt="Mean Reversion" style="max-width: 50%;">
 </div><div class="custom-container">
 <p>Thus, as investors’ attitude towards bearing risk changes, the “market price of risk / risk premium” (<span class="math notranslate nohighlight">\(\lambda\)</span> in the CAPM) changes. <span class="math notranslate nohighlight">\(\lambda\)</span> is positively related to the expected return on the stock market, <span class="math notranslate nohighlight">\(E[r_{S}]\)</span>.</p>
 <ul class="simple">
@@ -864,18 +876,16 @@ The stock weight X[st] chosen by the investor is: 0.345
 <p><strong>Predictor variables forecast <span class="math notranslate nohighlight">\(E_{t} [r_{S}]\)</span></strong> (and/or other asset class expectations). The TAA process has two steps:</p>
 <p><strong>TAA Step 1</strong>. Find predictor variables and determine their relationship to <span class="math notranslate nohighlight">\(E_{t} [r_{S}]\)</span></p>
 <p>Finding predictor variables that are correlated with future stock returns is usually done with regression analysis, by regressing stock returns on predictor variables that are observable before the stock return occurs:</p>
-<div style="text-align: center;">
-<p><span class="math notranslate nohighlight">\(r_{sq} = a + b_{1}PV_{1q} + b_{2}PV_{2q} + e\)</span></p>
-</div>
+<div class="math notranslate nohighlight">
+\[r_{sq} = a + b_{1}PV_{1q} + b_{2}PV_{2q} + e\]</div>
 <p>Where:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(PV_{1q}\)</span> and <span class="math notranslate nohighlight">\(PV_{2q}\)</span> are the observations of the predictor variables at <strong>the start</strong> of quarter <span class="math notranslate nohighlight">\(q\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(r_{sq}\)</span> is the stock index return over quarter <span class="math notranslate nohighlight">\(q\)</span></p></li>
 </ul>
 <p>When a relationship is found, stock returns are predicted from the regression model:</p>
-<div style="text-align: center;">
-<p><span class="math notranslate nohighlight">\(E[r_{sq}] = a' + b_{1}'PV_{1q} + b_{2}'PV_{2q}\)</span></p>
-</div>
+<div class="math notranslate nohighlight">
+\[E[r_{sq}] = a' + b_{1}'PV_{1q} + b_{2}'PV_{2q}\]</div>
 <p>Where:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(E[r_{sq}]\)</span> is the prediction made for the upcoming quarter <span class="math notranslate nohighlight">\(q\)</span></p></li>
@@ -2437,8 +2447,8 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 <li><p>At 1-year and 4-year horizons: the DP and DEF coefficients increase when moving from LG to VW to EW, that is, as the risk of the asset class increases. TERM coefficients are not sensitive to the risk of the asset class. In our data, we have a portfolio of long-term corporate bond returns (corpr) that mixes high-grade and low-grade bonds. We will use this as a proxy to test the FF1989 results.</p></li>
 <li><p>Recall that from the exercises above replicating Result 4, we can recover the coefficient estimators and T-statistics. Below we will used them to create a visual representation of FF(1989) Result 5.</p></li>
 </ul>
-<p><u>Conclusion from Result 5</u>:
-DP and DEF are better predictors for riskier assets; TERM’s power to predict does not depend on the asset’s risk.</p>
+<p><strong>Conclusion from Result 5</strong>:</p>
+<p>DP and DEF are better predictors for riskier assets; TERM’s power to predict does not depend on the asset’s risk.</p>
 </div>
 <style>
 .custom-container {
@@ -2522,8 +2532,9 @@ DP and DEF are better predictors for riskier assets; TERM’s power to predict d
 <ul class="simple">
 <li><p>At 1-year and 4-year horizons: the TERM coefficients are about 3 for the bond assets (Aaa, LG) and smaller (or negative!) for stocks (VW, EW).</p></li>
 </ul>
-<p><u>Conclusion from Result 6</u>:
-TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus, TERM does not seem to depend upon asset class risk. From its definition, TERM is obviously more related to the level of interest rates. TERM is less helpful in predicting stock returns.</p>
+<p><strong>Conclusion from Result 6</strong>:</p>
+<p>TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus, TERM does not seem to depend upon asset class risk. From its definition, TERM is obviously more related to the level of interest rates. TERM is less helpful in predicting stock returns.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -2543,6 +2554,7 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 <li><p>The R-squared for the regressions at 1-year and 4-year horizons are quite good: this simple model has some predictive content for longer-horizon stock (and bond) returns.</p></li>
 <li><p>FF also did “out-of-sample” tests. They fit the model with data from 1941 to 1971, then tested the model on data from 1972 to 1987. We will replicate this exercise in the code below.</p></li>
 </ul>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -2613,6 +2625,7 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 <section id="fama-french-paper-result-7-cont">
 <h2>Fama-French Paper Result 7 (cont.)<a class="headerlink" href="#fama-french-paper-result-7-cont" title="Permalink to this headline">#</a></h2>
 <p>The results above are quite close to the FF(1989). We can interpret that, for such a simple model, an R-squared of .3 or .4 is pretty good.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -2630,6 +2643,7 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 <section class="tex2jax_ignore mathjax_ignore" id="taa-chen-predictive-model">
 <h1>4. TAA: Chen Predictive Model<a class="headerlink" href="#taa-chen-predictive-model" title="Permalink to this headline">#</a></h1>
 <p>In this section we first report the original results from Chen’s analysis and then reproduce the results with updated data.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -2667,6 +2681,7 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 <li><p>Interest rates are forward-looking predictors of business activity and ERP</p></li>
 <li><p>Dividend yield (DP) and default spread (DEF) are price level proxies that reflect historical (previous) macroeconomic growth as well as high recent returns on stocks and risky bonds</p></li>
 </ul>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -2685,7 +2700,19 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 <p>Quarterly data 1954-1986</p>
 <section id="predictor-variables">
 <h3>Predictor Variables<a class="headerlink" href="#predictor-variables" title="Permalink to this headline">#</a></h3>
-<div align="center">
+</div>
+<style>
+.custom-container {
+    padding: 15px;
+    border: 1px solid #2196f3;
+    margin: auto;
+    max-width: 1500px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #000000;
+    background-color: #e1f5fe;
+}
+</style><div align="center">
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Predictor Variables</p></th>
@@ -2710,8 +2737,7 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 </tr>
 </tbody>
 </table>
-</div>
-<p>UTS follows the same definition as TERM in Fama French model; URP follows the same definition as DEF in Fama French model.</p>
+</div><p>UTS follows the same definition as TERM in Fama French model; URP follows the same definition as DEF in Fama French model.</p>
 <div align="center">
 <table class="colwidths-auto table">
 <thead>
@@ -2725,8 +2751,7 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 </tr>
 </tbody>
 </table>
-</div>
-<p>Chen also includes real consumption per capita, which we will omit for now due to data unavailability.</p>
+</div><p>Chen also includes real consumption per capita, which we will omit for now due to data unavailability.</p>
 <div align="center">
 <table class="colwidths-auto table">
 <thead>
@@ -2740,12 +2765,24 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 </tr>
 </tbody>
 </table>
-</div>
+</div><div class="custom-container">
 </section>
 <section id="the-predictivity-of-risk-factors-on-evw-t-is-as-follows">
 <h3>The predictivity of risk factors on <span class="math notranslate nohighlight">\(EVW_{t}\)</span> is as follows:<a class="headerlink" href="#the-predictivity-of-risk-factors-on-evw-t-is-as-follows" title="Permalink to this headline">#</a></h3>
 <p><strong>source: Chen 1991 Table 3 -lag1 (p536)</strong></p>
-<div align="center">
+</div>
+<style>
+.custom-container {
+    padding: 15px;
+    border: 1px solid #2196f3;
+    margin: auto;
+    max-width: 1500px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #000000;
+    background-color: #e1f5fe;
+}
+</style><div align="center">
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>State variable <span class="math notranslate nohighlight">\((X)\)</span></p></th>
@@ -2782,7 +2819,7 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 </tr>
 </tbody>
 </table>
-</div>
+</div><div class="custom-container">
 </section>
 <section id="results-on-risk-factors">
 <h3>Results on risk factors:<a class="headerlink" href="#results-on-risk-factors" title="Permalink to this headline">#</a></h3>
@@ -2791,6 +2828,7 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 <li><p><strong>High</strong> YPL implies <strong>Low</strong> equity risk premium: industrial production growth is the highest at business cycle peaks, when stock prices are unusually high implies investors expect a slower stock market growth rate in the future.</p></li>
 <li><p><strong>High</strong> TB implies <strong>Low</strong> equity risk premium: short term interest rates are the highest at business cycle peaks, when stock prices are unusually high implies investors expect a slower stock market growth rate in the future.</p></li>
 </ul>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -2810,7 +2848,18 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 \[GNPG_{t+lead} = a + b*X_{t-1} + e_{t}\]</div>
 <section id="source-chen1991-table-4-p538">
 <h4>source: Chen1991 Table 4 (p538)<a class="headerlink" href="#source-chen1991-table-4-p538" title="Permalink to this headline">#</a></h4>
-<div align="center">
+<style>
+.custom-container {
+    padding: 15px;
+    border: 1px solid #2196f3;
+    margin: auto;
+    max-width: 1500px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #000000;
+    background-color: #e1f5fe;
+}
+</style><div align="center">
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Lead</p></th>
@@ -2937,12 +2986,13 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 </tr>
 </tbody>
 </table>
-</div>
+</div><div class="custom-container">
 <p><strong>Results</strong>:</p>
 <ul class="simple">
 <li><p>GNP growth precedes YPL(+), URP(-) and DP(-)</p></li>
 <li><p>GNP growth follows UTS(+) and TB(-)</p></li>
 </ul>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -2976,6 +3026,7 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 <p>Given the hypothesis, the levels of the predictor variables in Table III and IV are the same.</p>
 <p><strong>Notice in Table IV</strong>: YPL, URP and DP depend on previous GNPG, while UTS and TB depend upon expected future GNPG.</p>
 <p>The argument can be repeated when GNP reaches a low level and ERP is high. Once again, the implications for the predictor variables in Table III will be consistent with the implications for the predictor variables from Table IV.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -2989,6 +3040,7 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 }
 </style><div class="custom-container">
 <p>Next we use historical data to look at the predictivity of risk factors in Chen’s model.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3008,6 +3060,7 @@ TERM predicts similarly for riskless (Aaa) bonds and for risky (LG) bonds. Thus,
 <h2>Updated Chen’s analysis<a class="headerlink" href="#updated-chen-s-analysis" title="Permalink to this headline">#</a></h2>
 <p>In the rest of the note we use updated data to reproduce the results in Chen’s model to the best we can, given data limitations.</p>
 <p>First we study the predictability of Chen’s risk factors on market risk premium. We load risk factors and asset returns used in Chen’s model.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3106,6 +3159,7 @@ Market risk premium is negatively correlated with YPL and TB, but is positively 
 <li><p>Low UTS  （+）</p></li>
 <li><p>High TB  （-）</p></li>
 </ul>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3119,6 +3173,7 @@ Market risk premium is negatively correlated with YPL and TB, but is positively 
 }
 </style><div class="custom-container">
 <p>Next we study the predictability of Chen’s risk factors on the growth rate of GNP.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3132,6 +3187,7 @@ Market risk premium is negatively correlated with YPL and TB, but is positively 
 }
 </style><div class="custom-container">
 <p>The following cell replicates Table IV from Chen (1991).</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3227,6 +3283,7 @@ Market risk premium is negatively correlated with YPL and TB, but is positively 
 <li><p>Low UTS (UTS is low when expected future GNPG is low) (corr(leadgnpg,UPS) &gt; 0)</p></li>
 <li><p>High TB (TB is high when expected future GNPG is low) (corr(leadgnpg,TB) &lt;0)</p></li>
 </ul>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3263,6 +3320,7 @@ while TB and UTS, the interest rate variables, predict future GNP growth.</p></l
 <li><p>High DP, URP and UTS signal that the current ERP (equity risk premium) is high</p></li>
 <li><p>High TB predicts that the current ERP is low.</p></li>
 </ul>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3339,6 +3397,7 @@ $<span class="math notranslate nohighlight">\(𝐸RP =\frac{𝑑_{1}}{𝑃_{0}}+
 <li><p><span class="math notranslate nohighlight">\(ra =\frac{\Delta(𝑆)}{𝑆_{0}}∗\frac{𝑃_{1}−𝑘}{𝑃_{0}}\)</span> is the repurchase adjustment</p></li>
 </ul>
 <p>And the other ERP components are defined directly above.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3363,6 +3422,7 @@ $<span class="math notranslate nohighlight">\(𝐸RP =\frac{𝑑_{1}}{𝑃_{0}}+
 <p>The income return of 4.4% comes, historically, mostly from dividend yield. However, in the last 20 years, share repurchases have become a much more popular way of distributing cash to shareholders (up by 20% over 20 years). One obvious reason is the tax advantage. Thus, going forward, one might expect a slightly higher, but still low dividend yield, say 2.5%, plus about a 1% share repurchase adjustment (if 5% of outstanding shares are repurchased at a 20% premium to closing price per share).</p>
 <p>If we were making, say, an ERP call for the next ten years, we might use the long-run averages as our estimates:
 <span class="math notranslate nohighlight">\(ERP = 4.4\% + 1.7\% + 3.1\% + 1.5\% - 4.9\% = 10.7\% - 4.9\% = 5.8\%\)</span></p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3376,6 +3436,7 @@ $<span class="math notranslate nohighlight">\(𝐸RP =\frac{𝑑_{1}}{𝑃_{0}}+
 }
 </style><div class="custom-container">
 <p>The following function calculates equity risk premium.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3413,6 +3474,7 @@ Market risk premium ERP is 0.0900
 </div>
 <div class="custom-container">
 <p>We can also plot the empirical trend of equity risk premium and the growth rate of GNP.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3493,6 +3555,7 @@ Market risk premium ERP is 0.0900
 <div><p>1-year bond yield = 3.5%</p>
 </div></blockquote>
 <p>So <span class="math notranslate nohighlight">\(ERP = 12.5\% – 3.5\% = 9\%\)</span>, or quite a bit more than the long-run ERP.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3515,6 +3578,7 @@ $<span class="math notranslate nohighlight">\(\frac{𝑃_{0}}{𝐸_{1}}=\frac{�
 <p>(i) payout ratio increases</p>
 <p>(ii) risk-adjusted rate decreases (smaller <span class="math notranslate nohighlight">\(K\)</span>)</p>
 <p>(iii) growth rate increases (bigger <span class="math notranslate nohighlight">\(G\)</span>)</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3567,6 +3631,7 @@ We can use this long-run SAA mix in the Sharpe Model to determine the client’s
 <p>If <span class="math notranslate nohighlight">\(𝐸[𝑟_{𝑠}]=0.08\)</span> then <span class="math notranslate nohighlight">\(𝐾_{1𝑡} =0.030/0.026=1.154\)</span> and <span class="math notranslate nohighlight">\(𝑋_{𝑠}=0.269\)</span></p>
 <p>Our long-term <span class="math notranslate nohighlight">\(𝐸[𝑟_{𝑠}]=0.10\)</span> leads to an SAA: <span class="math notranslate nohighlight">\(𝑋_{𝑠}=0.50\)</span>.</p>
 <p>If our shorter-term TAA <span class="math notranslate nohighlight">\(𝐸[𝑟_{𝑠}]\)</span> is higher than 10%, we hold more than 50% in stocks, if our stock forecast is less than 10%, we hold less than 50% in stocks.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3580,6 +3645,7 @@ We can use this long-run SAA mix in the Sharpe Model to determine the client’s
 }
 </style><div class="custom-container">
 <p>The following graph plots the variance and expected returns for different portfolios.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3626,6 +3692,7 @@ We can use this long-run SAA mix in the Sharpe Model to determine the client’s
 </div>
 <div class="custom-container">
 <p>The following code calculate the stock weight in TAA strategy.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3717,6 +3784,7 @@ We can use this long-run SAA mix in the Sharpe Model to determine the client’s
 </div>
 <div class="custom-container">
 <p>The stock weight and expected return is not a monotonic relationship because the variance of stock increase with the expected return and investors adjust the risk.</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -3733,6 +3801,7 @@ We can use this long-run SAA mix in the Sharpe Model to determine the client’s
 <section class="tex2jax_ignore mathjax_ignore" id="appendix">
 <h1>Appendix<a class="headerlink" href="#appendix" title="Permalink to this headline">#</a></h1>
 <p>The code below shows you how you can construct the variables in the dataframe <code class="docutils literal notranslate"><span class="pre">riskfactors</span></code> step-by-step. It requires that you have access to WRDS (a username and a password).</p>
+</div>
 <style>
 .custom-container {
     padding: 15px;
@@ -4018,7 +4087,7 @@ By Lorenzo Garlappi, Martin Rinaldi, and Tina Tian
     
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2024.
       <br/>
     
   </p>
