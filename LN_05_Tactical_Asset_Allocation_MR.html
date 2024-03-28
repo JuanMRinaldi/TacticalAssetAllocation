@@ -1,14 +1,56 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>COMM475 &#8212; COMM475 - Investment Policies | Tactical Asset Allocation</title>
+    <script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+        <script>
+            MathJax = {
+            loader: {load: ['[tex]/boldsymbol', '[tex]/textmacros']},
+            tex: {
+                packages: {'[+]': ['boldsymbol', 'textmacros']},
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                processEscapes: true,
+                macros: {
+                    "argmax" : "arg\\,max",
+                    "argmin" : "arg\\,min",
+                    "col"    : "col",
+                    "Span"   :  "span",
+                    "epsilon": "\\varepsilon",
+                    "EE": "\\mathbb{E}",
+                    "PP": "\\mathbb{P}",
+                    "RR": "\\mathbb{R}",
+                    "NN": "\\mathbb{N}",
+                    "ZZ": "\\mathbb{Z}",
+                    "aA": "\\mathcal{A}",
+                    "bB": "\\mathcal{B}",
+                    "cC": "\\mathcal{C}",
+                    "dD": "\\mathcal{D}",
+                    "eE": "\\mathcal{E}",
+                    "fF": "\\mathcal{F}",
+                    "gG": "\\mathcal{G}",
+                    "hH": "\\mathcal{H}",
+                }
+            },
+            svg: {
+                fontCache: 'global',
+                scale: 0.92,
+                displayAlign: "center",
+            },
+            };
+        </script>
+    
+    
   
   
   
@@ -28,316 +70,91 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/quantecon-book-theme.css?digest=b09b2da44b9015b4fa76ea072fa2d8f7faee5492" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="_static/copybutton.js?v=5eb1bb1e"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/scripts/quantecon-book-theme.js?digest=eed9c059a3ee152aae2353ec732f0a6d12e6aa07"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'LN_05_Tactical_Asset_Allocation_MR';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Welcome to COMM475 - Investment Policies | Tactical Asset Allocation" href="intro.html" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+
+<!-- Normal Meta Tags -->
+<meta name="author" context="Lorenzo Garlappi, Martin Rinaldi, and Tina Tian" />
+<meta name="keywords" content="" />
+<meta name="description" content=COMM475Investment Policies: Tactical Asset Allocation  Instructor: Lorenzo Garlappi  TAs:  Martin Rinaldi  Tina Tian  &lt;/div&gt;   &lt;style&gt; .custom-container {     p />
+
+<!-- Twitter tags -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:title" content="COMM475"/>
+<meta name="twitter:description" content="COMM475Investment Policies: Tactical Asset Allocation  Instructor: Lorenzo Garlappi  TAs:  Martin Rinaldi  Tina Tian  &lt;/div&gt;   &lt;style&gt; .custom-container {     p">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:image" content="">
+
+<!-- Opengraph tags -->
+<meta property="og:title" content="COMM475" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="None" />
+<meta property="og:image" content="" />
+<meta property="og:description" content="COMM475Investment Policies: Tactical Asset Allocation  Instructor: Lorenzo Garlappi  TAs:  Martin Rinaldi  Tina Tian  &lt;/div&gt;   &lt;style&gt; .custom-container {     p" />
+<meta property="og:site_name" content="COMM475 - Investment Policies | Tactical Asset Allocation" />
+<meta name="theme-color" content="#ffffff" />
+
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
-  
-  
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
-
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
-<form class="bd-search d-flex align-items-center"
-      action="search.html"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
-  
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
-    </header>
-  
-
-  <div class="bd-container">
-    <div class="bd-container__inner bd-page-width">
-      
-      
-      
-      <div class="bd-sidebar-primary bd-sidebar">
-        
-
-  
-  <div class="sidebar-header-items sidebar-primary__section">
-    
-    
-    
-    
-  </div>
-  
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-
-  
-
-<a class="navbar-brand logo" href="intro.html">
-  
-  
-  
-  
-  
-    
-    
-      
-    
-    
-    <img src="_static/UBC.jpeg" class="logo__image only-light" alt="COMM475 - Investment Policies | Tactical Asset Allocation - Home"/>
-    <script>document.write(`<img src="_static/UBC.jpeg" class="logo__image only-dark" alt="COMM475 - Investment Policies | Tactical Asset Allocation - Home"/>`);</script>
-  
-  
-</a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    Welcome to COMM475 - Investment Policies | Tactical Asset Allocation
-                </a>
-            </li>
-        </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">COMM475</a></li>
+<body>
 
 
+    <span id="top"></span>
+
+    <div class="qe-wrapper">
+
+        <div class="qe-main">
+
+            <div class="qe-page" id=LN_05_Tactical_Asset_Allocation_MR>
+
+                <div class="qe-page__toc">
+
+                    <div class="inner">
+
+                        
+                        <div class="qe-page__toc-header">
+                            On this page
+                        </div>
 
 
-
-
-
-
-
-
-
-</ul>
-
-    </div>
-</nav></div>
-    </div>
-  
-  
-  <div class="sidebar-primary-items__end sidebar-primary__section">
-  </div>
-  
-  <div id="rtd-footer-container"></div>
-
-
-      </div>
-      
-      <main id="main-content" class="bd-main">
-        
-        
-
-<div class="sbt-scroll-pixel-helper"></div>
-
-          <div class="bd-content">
-            <div class="bd-article-container">
-              
-              <div class="bd-header-article">
-<div class="header-article-items header-article__inner">
-  
-    <div class="header-article-items__start">
-      
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <span class="fa-solid fa-bars"></span>
-</label></div>
-      
-    </div>
-  
-  
-    <div class="header-article-items__end">
-      
-        <div class="header-article-item">
-
-<div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
-    <i class="fas fa-download"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="_sources/LN_05_Tactical_Asset_Allocation_MR.ipynb" target="_blank"
-   class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="btn__text-container">.ipynb</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li>
-<button onclick="window.print()"
-  class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
-  data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="btn__text-container">.pdf</span>
-</button>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-<button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
-  data-bs-placement="bottom" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-
-
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
-
-
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
-</div></div>
-      
-    </div>
-  
-</div>
-</div>
-              
-              
-
-<div id="jb-print-docs-body" class="onlyprint">
-    <h1>COMM475</h1>
-    <!-- Table of contents -->
-    <div id="print-main-content">
-        <div id="jb-print-toc">
-            
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+                        <nav id="bd-toc-nav" class="qe-page__toc-nav">
+                            <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">COMM475</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#investment-policies-tactical-asset-allocation">Investment Policies: Tactical Asset Allocation</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructor-lorenzo-garlappi">Instructor: Lorenzo Garlappi</a></li>
@@ -406,32 +223,66 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix">Appendix</a></li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
-</div>
+                            <p class="logo">
+                                
+                                    
+                                    <a href="intro.html"><img src="_static/UBC.jpeg" class="logo" alt="logo"></a>
+                                    
+                                
+                            </p>
 
-              
+                            <p class="powered">Powered by <a href="https://jupyterbook.org/">Jupyter Book</a></p>
+
+                        </nav>
+
+                        <div class="qe-page__toc-footer">
+                            
+                            
+                            <p><a href="#top"><strong>Back to top</strong></a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="qe-page__header">
+
+                    <div class="qe-page__header-copy">
+
+                        <p class="qe-page__header-heading"><a href="intro.html">COMM475 - Investment Policies | Tactical Asset Allocation</a></p>
+
+                        <p class="qe-page__header-subheading">COMM475</p>
+
+                    </div>
+                    <!-- length 2, since its a string and empty dict has length 2 - {} -->
+                        <p class="qe-page__header-authors" font-size="18">Lorenzo Garlappi, Martin Rinaldi, and Tina Tian</p>
+
+
+                </div> <!-- .page__header -->
+
+
+
                 
-<div id="searchbox"></div>
-                <article class="bd-article">
-                  
+                <main class="qe-page__content" role="main">
+                    
+                    <div>
+                        
   <div class="custom-container">
 <section class="tex2jax_ignore mathjax_ignore" id="comm475">
-<h1>COMM475<a class="headerlink" href="#comm475" title="Link to this heading">#</a></h1>
+<h1>COMM475<a class="headerlink" href="#comm475" title="Permalink to this heading">#</a></h1>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="investment-policies-tactical-asset-allocation">
-<h1>Investment Policies: Tactical Asset Allocation<a class="headerlink" href="#investment-policies-tactical-asset-allocation" title="Link to this heading">#</a></h1>
+<h1>Investment Policies: Tactical Asset Allocation<a class="headerlink" href="#investment-policies-tactical-asset-allocation" title="Permalink to this heading">#</a></h1>
 <section id="instructor-lorenzo-garlappi">
-<h2>Instructor: Lorenzo Garlappi<a class="headerlink" href="#instructor-lorenzo-garlappi" title="Link to this heading">#</a></h2>
+<h2>Instructor: Lorenzo Garlappi<a class="headerlink" href="#instructor-lorenzo-garlappi" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="tas">
-<h2>TAs:<a class="headerlink" href="#tas" title="Link to this heading">#</a></h2>
+<h2>TAs:<a class="headerlink" href="#tas" title="Permalink to this heading">#</a></h2>
 <section id="martin-rinaldi">
-<h3>Martin Rinaldi<a class="headerlink" href="#martin-rinaldi" title="Link to this heading">#</a></h3>
+<h3>Martin Rinaldi<a class="headerlink" href="#martin-rinaldi" title="Permalink to this heading">#</a></h3>
 </section>
 <section id="tina-tian">
-<h3>Tina Tian<a class="headerlink" href="#tina-tian" title="Link to this heading">#</a></h3>
+<h3>Tina Tian<a class="headerlink" href="#tina-tian" title="Permalink to this heading">#</a></h3>
 </div>
 <style>
 .custom-container {
@@ -449,9 +300,9 @@ document.write(`
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="outline">
-<h1>Outline<a class="headerlink" href="#outline" title="Link to this heading">#</a></h1>
+<h1>Outline<a class="headerlink" href="#outline" title="Permalink to this heading">#</a></h1>
 <section id="subcategories-of-dynamic-asset-allocation">
-<h2>1. Subcategories of Dynamic Asset Allocation<a class="headerlink" href="#subcategories-of-dynamic-asset-allocation" title="Link to this heading">#</a></h2>
+<h2>1. Subcategories of Dynamic Asset Allocation<a class="headerlink" href="#subcategories-of-dynamic-asset-allocation" title="Permalink to this heading">#</a></h2>
 </div>
 <style>
 .custom-container {
@@ -468,13 +319,13 @@ document.write(`
 <div class="custom-container">
 </section>
 <section id="the-basic-contrarian-taa-principle-as-applied-to-taa">
-<h2>2. The Basic ‘‘Contrarian’’ TAA Principle as Applied to TAA<a class="headerlink" href="#the-basic-contrarian-taa-principle-as-applied-to-taa" title="Link to this heading">#</a></h2>
+<h2>2. The Basic ‘‘Contrarian’’ TAA Principle as Applied to TAA<a class="headerlink" href="#the-basic-contrarian-taa-principle-as-applied-to-taa" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Mean reversion in stock prices (negative return correlation)</p></li>
 </ul>
 </section>
 <section id="taa-models">
-<h2>3. TAA Models<a class="headerlink" href="#taa-models" title="Link to this heading">#</a></h2>
+<h2>3. TAA Models<a class="headerlink" href="#taa-models" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>The General Methodology of Estimating the Equity Risk Premium (ERP)</p></li>
 <li><p>Fama, French (FF) Predictive Model</p></li>
@@ -482,14 +333,14 @@ document.write(`
 </ul>
 </section>
 <section id="practical-taa-measures">
-<h2>4. Practical TAA Measures<a class="headerlink" href="#practical-taa-measures" title="Link to this heading">#</a></h2>
+<h2>4. Practical TAA Measures<a class="headerlink" href="#practical-taa-measures" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>How to Estimate ERP directly</p></li>
 <li><p>A Simple TAA Implementation</p></li>
 </ul>
 </section>
 <section id="summary">
-<h2>5. Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<h2>5. Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>The ERP is hard to predict</p></li>
 <li><p>The ERP is related to the business cycle</p></li>
@@ -509,7 +360,7 @@ document.write(`
 </style><div class="custom-container">
 </section>
 <section id="warm-up">
-<h2>Warm up<a class="headerlink" href="#warm-up" title="Link to this heading">#</a></h2>
+<h2>Warm up<a class="headerlink" href="#warm-up" title="Permalink to this heading">#</a></h2>
 <p>Before we start, let’s first install the dependencies and import the libraries we need.</p>
 <p>Please follow steps 1 and 2 below to be able to run this notebook on your local machine.</p>
 <ol class="arabic simple">
@@ -540,7 +391,7 @@ document.write(`
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="taa-definitions-of-saa-taa-and-iaa">
-<h1>1. TAA: Definitions of SAA, TAA and IAA<a class="headerlink" href="#taa-definitions-of-saa-taa-and-iaa" title="Link to this heading">#</a></h1>
+<h1>1. TAA: Definitions of SAA, TAA and IAA<a class="headerlink" href="#taa-definitions-of-saa-taa-and-iaa" title="Permalink to this heading">#</a></h1>
 </div>
 <style>
 .custom-container {
@@ -555,7 +406,7 @@ document.write(`
 }
 </style><div class="custom-container">
 <section id="taa-william-sharpes-characterization-of-saa-taa-and-iaa">
-<h2>TAA: William Sharpe’s characterization of SAA, TAA and IAA<a class="headerlink" href="#taa-william-sharpes-characterization-of-saa-taa-and-iaa" title="Link to this heading">#</a></h2>
+<h2>TAA: William Sharpe’s characterization of SAA, TAA and IAA<a class="headerlink" href="#taa-william-sharpes-characterization-of-saa-taa-and-iaa" title="Permalink to this heading">#</a></h2>
 </div>
 <style>
 .custom-container {
@@ -655,7 +506,7 @@ $<span class="math notranslate nohighlight">\(\max_{X_{st}} E[R_{t}] -  \frac{1}
 </style><div class="custom-container">
 </section>
 <section id="the-following-functions-calculate-k0-k1-and-stock-weight-from-assets-volatility-and-returns">
-<h2>The following functions calculate K0, K1 and stock weight from assets volatility and returns.<a class="headerlink" href="#the-following-functions-calculate-k0-k1-and-stock-weight-from-assets-volatility-and-returns" title="Link to this heading">#</a></h2>
+<h2>The following functions calculate K0, K1 and stock weight from assets volatility and returns.<a class="headerlink" href="#the-following-functions-calculate-k0-k1-and-stock-weight-from-assets-volatility-and-returns" title="Permalink to this heading">#</a></h2>
 </div>
 <style>
 .custom-container {
@@ -719,7 +570,7 @@ The stock weight X[st] chosen by the investor is: 0.345
 <div class="custom-container">
 </section>
 <section id="suppose-that-the-investor-becomes-more-risk-tolerant-as-his-her-wealth-increases-what-happens-to-the-portfolio-weight-in-stocks-x-st">
-<h2>Suppose that the investor becomes more risk tolerant as his/her wealth increases. What happens to the portfolio weight in stocks, <span class="math notranslate nohighlight">\(X_{st}\)</span>?<a class="headerlink" href="#suppose-that-the-investor-becomes-more-risk-tolerant-as-his-her-wealth-increases-what-happens-to-the-portfolio-weight-in-stocks-x-st" title="Link to this heading">#</a></h2>
+<h2>Suppose that the investor becomes more risk tolerant as his/her wealth increases. What happens to the portfolio weight in stocks, <span class="math notranslate nohighlight">\(X_{st}\)</span>?<a class="headerlink" href="#suppose-that-the-investor-becomes-more-risk-tolerant-as-his-her-wealth-increases-what-happens-to-the-portfolio-weight-in-stocks-x-st" title="Permalink to this heading">#</a></h2>
 </div>
 <style>
 .custom-container {
@@ -735,7 +586,7 @@ The stock weight X[st] chosen by the investor is: 0.345
 </style><div class="custom-container">
 </section>
 <section id="taa-mean-reversion-in-the-stock-index-price-level-negative-serial-correlation-in-stock-index-returns">
-<h2>TAA: Mean Reversion in the Stock Index Price Level (Negative Serial Correlation in Stock Index Returns)<a class="headerlink" href="#taa-mean-reversion-in-the-stock-index-price-level-negative-serial-correlation-in-stock-index-returns" title="Link to this heading">#</a></h2>
+<h2>TAA: Mean Reversion in the Stock Index Price Level (Negative Serial Correlation in Stock Index Returns)<a class="headerlink" href="#taa-mean-reversion-in-the-stock-index-price-level-negative-serial-correlation-in-stock-index-returns" title="Permalink to this heading">#</a></h2>
 </div>
 <style>
 .custom-container {
@@ -778,7 +629,7 @@ The stock weight X[st] chosen by the investor is: 0.345
 </style><div class="custom-container">
 </section>
 <section id="taa-a-mean-reverting-stock-index">
-<h2>TAA: A Mean-Reverting Stock Index<a class="headerlink" href="#taa-a-mean-reverting-stock-index" title="Link to this heading">#</a></h2>
+<h2>TAA: A Mean-Reverting Stock Index<a class="headerlink" href="#taa-a-mean-reverting-stock-index" title="Permalink to this heading">#</a></h2>
 </div>
 <style>
 .custom-container {
@@ -829,9 +680,9 @@ The stock weight X[st] chosen by the investor is: 0.345
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="taa-the-general-taa-methodology">
-<h1>2. TAA: The General TAA Methodology<a class="headerlink" href="#taa-the-general-taa-methodology" title="Link to this heading">#</a></h1>
+<h1>2. TAA: The General TAA Methodology<a class="headerlink" href="#taa-the-general-taa-methodology" title="Permalink to this heading">#</a></h1>
 <section id="determining-t-r">
-<h2>Determining <span class="math notranslate nohighlight">\(𝑬_{𝒕}[𝒓_{𝑺}]\)</span><a class="headerlink" href="#determining-t-r" title="Link to this heading">#</a></h2>
+<h2>Determining <span class="math notranslate nohighlight">\(𝑬_{𝒕}[𝒓_{𝑺}]\)</span><a class="headerlink" href="#determining-t-r" title="Permalink to this heading">#</a></h2>
 </div>
 <style>
 .custom-container {
@@ -883,7 +734,7 @@ The stock weight X[st] chosen by the investor is: 0.345
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="taa-the-fama-french-ff-predictive-model">
-<h1>3. TAA: The Fama-French (FF) Predictive Model<a class="headerlink" href="#taa-the-fama-french-ff-predictive-model" title="Link to this heading">#</a></h1>
+<h1>3. TAA: The Fama-French (FF) Predictive Model<a class="headerlink" href="#taa-the-fama-french-ff-predictive-model" title="Permalink to this heading">#</a></h1>
 </div>
 <style>
 .custom-container {
@@ -899,7 +750,7 @@ The stock weight X[st] chosen by the investor is: 0.345
 </style>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1><a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <div class="custom-container">
 <p>In this section, we report the original analysis from Fama-French predictive model and then followed with python code to reproduce the results.</p>
 </div>
@@ -977,7 +828,7 @@ So, low prices =&gt; high DP =&gt; high expected returns.</p>
 }
 </style><div class="custom-container">
 <section id="taa-fama-french-results">
-<h2>TAA: Fama-French Results<a class="headerlink" href="#taa-fama-french-results" title="Link to this heading">#</a></h2>
+<h2>TAA: Fama-French Results<a class="headerlink" href="#taa-fama-french-results" title="Permalink to this heading">#</a></h2>
 </div>
 <style>
 .custom-container {
@@ -1331,7 +1182,7 @@ So, low prices =&gt; high DP =&gt; high expected returns.</p>
 </style><div class="custom-container">
 </section>
 <section id="fama-french-paper-result-1">
-<h2>Fama-French Paper Result 1<a class="headerlink" href="#fama-french-paper-result-1" title="Link to this heading">#</a></h2>
+<h2>Fama-French Paper Result 1<a class="headerlink" href="#fama-french-paper-result-1" title="Permalink to this heading">#</a></h2>
 <p><strong>DP and DEF are persistent, TERM is not.</strong></p>
 <ul class="simple">
 <li><p>Both DP and DEF are <em>autocorrelated with lags</em>. This means that <span class="math notranslate nohighlight">\(Corr(𝐷P_{𝑡} ,𝐷P_{𝑡 +1})&gt;0\)</span>, but so is <span class="math notranslate nohighlight">\(Corr(𝐷P_{𝑡} ,𝐷P_{𝑡 +2})&gt;0\)</span>, and so is <span class="math notranslate nohighlight">\(Corr(𝐷P_{𝑡} ,𝐷P_{𝑡 +3})&gt;0\)</span>, etc., out to 8 annual lags.</p></li>
@@ -1472,7 +1323,7 @@ TERM is less persistent
 </style><div class="custom-container">
 </section>
 <section id="fama-french-paper-result-2">
-<h2>Fama-French Paper Result 2<a class="headerlink" href="#fama-french-paper-result-2" title="Link to this heading">#</a></h2>
+<h2>Fama-French Paper Result 2<a class="headerlink" href="#fama-french-paper-result-2" title="Permalink to this heading">#</a></h2>
 <p>After 1951, TERM is higher at the trough of a business cycle compared to its levels at both the preceding peak and the subsequent peak of the business cycle.</p>
 <ul class="simple">
 <li><p>While TERM has lower autocorrelation than DP or DEF, it is typically steep at business cycle troughs and flat (or inverted) at business cycle peaks.</p></li>
@@ -1560,7 +1411,7 @@ TERM is less persistent
 </style><div class="custom-container">
 </section>
 <section id="fama-french-paper-result-3">
-<h2>Fama-French Paper Result 3<a class="headerlink" href="#fama-french-paper-result-3" title="Link to this heading">#</a></h2>
+<h2>Fama-French Paper Result 3<a class="headerlink" href="#fama-french-paper-result-3" title="Permalink to this heading">#</a></h2>
 <p>Correlations:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(Corr(𝐷P_{𝑡} ,𝐷EF_{𝑡})=0.75\)</span>: DP and DEF move together over time.</p></li>
@@ -1717,7 +1568,7 @@ TERM is less persistent
 </style><div class="custom-container">
 </section>
 <section id="fama-french-paper-result-4">
-<h2>Fama-French Paper Result 4<a class="headerlink" href="#fama-french-paper-result-4" title="Link to this heading">#</a></h2>
+<h2>Fama-French Paper Result 4<a class="headerlink" href="#fama-french-paper-result-4" title="Permalink to this heading">#</a></h2>
 <p>In their analysis, Fama and French regress asset class returns (Aaa, LG, VW, and EW) against predictor variables (DP, DEF, and TERM), observing:</p>
 <ul class="simple">
 <li><p>Most b and c regression coefficients are positive, aligning with expectations.</p></li>
@@ -2415,7 +2266,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 </style><div class="custom-container">
 </section>
 <section id="fama-french-paper-result-5">
-<h2>Fama-French Paper Result 5<a class="headerlink" href="#fama-french-paper-result-5" title="Link to this heading">#</a></h2>
+<h2>Fama-French Paper Result 5<a class="headerlink" href="#fama-french-paper-result-5" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>At 1-year and 4-year horizons: the DP and DEF coefficients increase when moving from LG to VW to EW, that is, as the risk of the asset class increases. TERM coefficients are not sensitive to the risk of the asset class. In our data, we have a portfolio of long-term corporate bond returns (corpr) that mixes high-grade and low-grade bonds. We will use this as a proxy to test the FF1989 results.</p></li>
 <li><p>Recall that from the exercises above replicating Result 4, we can recover the coefficient estimators and T-statistics. Below we will used them to create a visual representation of FF(1989) Result 5.</p></li>
@@ -2501,7 +2352,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 <div class="custom-container">
 </section>
 <section id="fama-french-paper-result-6">
-<h2>Fama-French Paper Result 6<a class="headerlink" href="#fama-french-paper-result-6" title="Link to this heading">#</a></h2>
+<h2>Fama-French Paper Result 6<a class="headerlink" href="#fama-french-paper-result-6" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>At 1-year and 4-year horizons: the TERM coefficients are about 3 for the bond assets (Aaa, LG) and smaller (or negative!) for stocks (VW, EW).</p></li>
 </ul>
@@ -2522,7 +2373,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 </style><div class="custom-container">
 </section>
 <section id="fama-french-paper-result-7">
-<h2>Fama-French Paper Result 7<a class="headerlink" href="#fama-french-paper-result-7" title="Link to this heading">#</a></h2>
+<h2>Fama-French Paper Result 7<a class="headerlink" href="#fama-french-paper-result-7" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>The R-squared for the regressions at 1-year and 4-year horizons are quite good: this simple model has some predictive content for longer-horizon stock (and bond) returns.</p></li>
 <li><p>FF also did “out-of-sample” tests. They fit the model with data from 1941 to 1971, then tested the model on data from 1972 to 1987. We will replicate this exercise in the code below.</p></li>
@@ -2596,7 +2447,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 <div class="custom-container">
 </section>
 <section id="fama-french-paper-result-7-cont">
-<h2>Fama-French Paper Result 7 (cont.)<a class="headerlink" href="#fama-french-paper-result-7-cont" title="Link to this heading">#</a></h2>
+<h2>Fama-French Paper Result 7 (cont.)<a class="headerlink" href="#fama-french-paper-result-7-cont" title="Permalink to this heading">#</a></h2>
 <p>The results above are quite close to the FF(1989). We can interpret that, for such a simple model, an R-squared of .3 or .4 is pretty good.</p>
 </div>
 <style>
@@ -2614,7 +2465,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="taa-chen-predictive-model">
-<h1>4. TAA: Chen Predictive Model<a class="headerlink" href="#taa-chen-predictive-model" title="Link to this heading">#</a></h1>
+<h1>4. TAA: Chen Predictive Model<a class="headerlink" href="#taa-chen-predictive-model" title="Permalink to this heading">#</a></h1>
 <p>In this section we first report the original results from Chen’s analysis and then reproduce the results with updated data.</p>
 </div>
 <style>
@@ -2630,7 +2481,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 }
 </style><div class="custom-container">
 <section id="chens-original-analysis">
-<h2>Chen’s original analysis<a class="headerlink" href="#chens-original-analysis" title="Link to this heading">#</a></h2>
+<h2>Chen’s original analysis<a class="headerlink" href="#chens-original-analysis" title="Permalink to this heading">#</a></h2>
 <p>Chen relates predictor variables to both the equity risk premium (ERP), as done by FF, but more importantly, he also relates the predictor variables to the <strong>business cycle</strong>. He finds that:</p>
 <ul class="simple">
 <li><p>The business cycle is related to the predictor variables and</p></li>
@@ -2669,10 +2520,10 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 </style><div class="custom-container">
 </section>
 <section id="an-overview-of-risk-factors-used-in-the-chen-predictive-model">
-<h2>An Overview of Risk Factors Used in the Chen Predictive Model<a class="headerlink" href="#an-overview-of-risk-factors-used-in-the-chen-predictive-model" title="Link to this heading">#</a></h2>
+<h2>An Overview of Risk Factors Used in the Chen Predictive Model<a class="headerlink" href="#an-overview-of-risk-factors-used-in-the-chen-predictive-model" title="Permalink to this heading">#</a></h2>
 <p>Quarterly data 1954-1986</p>
 <section id="predictor-variables">
-<h3>Predictor Variables<a class="headerlink" href="#predictor-variables" title="Link to this heading">#</a></h3>
+<h3>Predictor Variables<a class="headerlink" href="#predictor-variables" title="Permalink to this heading">#</a></h3>
 </div>
 <style>
 .custom-container {
@@ -2686,7 +2537,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
     background-color: #e1f5fe;
 }
 </style><div align="center">
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Predictor Variables</p></th>
 <th class="head"><p>Description</p></th>
@@ -2712,7 +2563,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 </table>
 </div><p>UTS follows the same definition as TERM in Fama French model; URP follows the same definition as DEF in Fama French model.</p>
 <div align="center">
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Macroeconomic variables</p></th>
 <th class="head"><p>Decription</p></th>
@@ -2726,7 +2577,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 </table>
 </div><p>Chen also includes real consumption per capita, which we will omit for now due to data unavailability.</p>
 <div align="center">
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Market return variable</p></th>
 <th class="head"><p>Description</p></th>
@@ -2741,7 +2592,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 </div><div class="custom-container">
 </section>
 <section id="the-predictivity-of-risk-factors-on-evw-t-is-as-follows">
-<h3>The predictivity of risk factors on <span class="math notranslate nohighlight">\(EVW_{t}\)</span> is as follows:<a class="headerlink" href="#the-predictivity-of-risk-factors-on-evw-t-is-as-follows" title="Link to this heading">#</a></h3>
+<h3>The predictivity of risk factors on <span class="math notranslate nohighlight">\(EVW_{t}\)</span> is as follows:<a class="headerlink" href="#the-predictivity-of-risk-factors-on-evw-t-is-as-follows" title="Permalink to this heading">#</a></h3>
 <p><strong>source: Chen 1991 Table 3 -lag1 (p536)</strong></p>
 </div>
 <style>
@@ -2756,7 +2607,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
     background-color: #e1f5fe;
 }
 </style><div align="center">
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>State variable <span class="math notranslate nohighlight">\((X)\)</span></p></th>
 <th class="head"><p>b</p></th>
@@ -2795,7 +2646,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 </div><div class="custom-container">
 </section>
 <section id="results-on-risk-factors">
-<h3>Results on risk factors:<a class="headerlink" href="#results-on-risk-factors" title="Link to this heading">#</a></h3>
+<h3>Results on risk factors:<a class="headerlink" href="#results-on-risk-factors" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>DP, UTS and URP results are the same as prediction in Fama-French.</p></li>
 <li><p><strong>High</strong> YPL implies <strong>Low</strong> equity risk premium: industrial production growth is the highest at business cycle peaks, when stock prices are unusually high implies investors expect a slower stock market growth rate in the future.</p></li>
@@ -2816,11 +2667,11 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 </style><div class="custom-container">
 </section>
 <section id="predictivity-of-risk-factors-on-the-growth-rate-of-gnp-is-as-follows">
-<h3>Predictivity of risk factors on the growth rate of GNP is as follows:<a class="headerlink" href="#predictivity-of-risk-factors-on-the-growth-rate-of-gnp-is-as-follows" title="Link to this heading">#</a></h3>
+<h3>Predictivity of risk factors on the growth rate of GNP is as follows:<a class="headerlink" href="#predictivity-of-risk-factors-on-the-growth-rate-of-gnp-is-as-follows" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[GNPG_{t+lead} = a + b*X_{t-1} + e_{t}\]</div>
 <section id="source-chen1991-table-4-p538">
-<h4>source: Chen1991 Table 4 (p538)<a class="headerlink" href="#source-chen1991-table-4-p538" title="Link to this heading">#</a></h4>
+<h4>source: Chen1991 Table 4 (p538)<a class="headerlink" href="#source-chen1991-table-4-p538" title="Permalink to this heading">#</a></h4>
 <style>
 .custom-container {
     padding: 15px;
@@ -2833,7 +2684,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
     background-color: #e1f5fe;
 }
 </style><div align="center">
-<table class="table">
+<table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Lead</p></th>
 <th class="head"><p>YPL</p></th>
@@ -3030,7 +2881,7 @@ Given that the data we used is on quarterly basis, we did not reproduce those re
 </section>
 </section>
 <section id="updated-chens-analysis">
-<h2>Updated Chen’s analysis<a class="headerlink" href="#updated-chens-analysis" title="Link to this heading">#</a></h2>
+<h2>Updated Chen’s analysis<a class="headerlink" href="#updated-chens-analysis" title="Permalink to this heading">#</a></h2>
 <p>In the rest of the note we use updated data to reproduce the results in Chen’s model to the best we can, given data limitations.</p>
 <p>First we study the predictability of Chen’s risk factors on market risk premium. We load risk factors and asset returns used in Chen’s model.</p>
 </div>
@@ -3272,7 +3123,7 @@ Market risk premium is negatively correlated with YPL and TB, but is positively 
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="taa-contrarian-taa-versus-momentum-taa">
-<h1>5. TAA: Contrarian TAA Versus Momentum TAA<a class="headerlink" href="#taa-contrarian-taa-versus-momentum-taa" title="Link to this heading">#</a></h1>
+<h1>5. TAA: Contrarian TAA Versus Momentum TAA<a class="headerlink" href="#taa-contrarian-taa-versus-momentum-taa" title="Permalink to this heading">#</a></h1>
 <p>To the degree that past returns tell us about future returns, an investor can be one of two types: a momentum investor or a contrarian investor.</p>
 <p>A contrarian looks for reversals (investors who believe in negative correlation): invest after the index has fallen (because the index will rise from there) and get out after the index has risen (because the index will fall from there).</p>
 <p>A momentum investor looks for continuations (investors who believe in positive correlation): invest after the market has started to go up because it will continue to go up and get out when the market has started to go down because it will continue go down.</p>
@@ -3309,7 +3160,7 @@ while TB and UTS, the interest rate variables, predict future GNP growth.</p></l
 <div class="custom-container">
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="taa-estimating-the-erp-directly">
-<h1>6. TAA: Estimating the ERP Directly<a class="headerlink" href="#taa-estimating-the-erp-directly" title="Link to this heading">#</a></h1>
+<h1>6. TAA: Estimating the ERP Directly<a class="headerlink" href="#taa-estimating-the-erp-directly" title="Permalink to this heading">#</a></h1>
 <p>We can decompose the equity risk premium (ERP), defined as the expected return on the stock index less the expected return on a riskless bond portfolio, to better estimate the components, and so the total, ERP.</p>
 <div class="math notranslate nohighlight">
 \[𝐸RP =𝐸[𝑟_{𝑠}]−𝐸[𝑟_{𝑏}]\]</div>
@@ -3384,7 +3235,7 @@ $<span class="math notranslate nohighlight">\(𝐸RP =\frac{𝑑_{1}}{𝑃_{0}}+
 }
 </style><div class="custom-container">
 <section id="estimating-the-erp-directly-a-numerical-example">
-<h2>Estimating the ERP Directly: A Numerical Example<a class="headerlink" href="#estimating-the-erp-directly-a-numerical-example" title="Link to this heading">#</a></h2>
+<h2>Estimating the ERP Directly: A Numerical Example<a class="headerlink" href="#estimating-the-erp-directly-a-numerical-example" title="Permalink to this heading">#</a></h2>
 <p>A report from Barclays Global Investors (now part of BlackRock Capital) provides some long-run annual estimates of these factors:</p>
 <ul class="simple">
 <li><p>Income return = dividend yield + repurchase adjustment = 4.4%</p></li>
@@ -3567,7 +3418,7 @@ $<span class="math notranslate nohighlight">\(\frac{𝑃_{0}}{𝐸_{1}}=\frac{�
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="taa-a-simple-taa-implementation">
-<h1>7. TAA: A Simple TAA Implementation<a class="headerlink" href="#taa-a-simple-taa-implementation" title="Link to this heading">#</a></h1>
+<h1>7. TAA: A Simple TAA Implementation<a class="headerlink" href="#taa-a-simple-taa-implementation" title="Permalink to this heading">#</a></h1>
 <p>Given expected bond and stock returns, we need to form a portfolio. Assume only two asset classes, bonds (b) and stock (s), with the following long-run reward and risk profiles:</p>
 <div class="math notranslate nohighlight">
 \[𝐸[𝑟_{𝑏}]=0.05 \text{and} \sigma_{𝑏}=0.10\]</div>
@@ -3772,7 +3623,7 @@ We can use this long-run SAA mix in the Sharpe Model to determine the client’s
 </style><div class="custom-container">
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="appendix">
-<h1>Appendix<a class="headerlink" href="#appendix" title="Link to this heading">#</a></h1>
+<h1>Appendix<a class="headerlink" href="#appendix" title="Permalink to this heading">#</a></h1>
 <p>The code below shows you how you can construct the variables in the dataframe <code class="docutils literal notranslate"><span class="pre">riskfactors</span></code> step-by-step. It requires that you have access to WRDS (a username and a password).</p>
 </div>
 <style>
@@ -3938,160 +3789,205 @@ We can use this long-run SAA mix in the Sharpe Model to determine the client’s
     </script>
     <script>kernelName = 'python3'</script>
 
-                </article>
-              
+                    </div>
+                    
+                </main> <!-- .page__content -->
+                
 
-              
-              
-              
-              
-                <footer class="prev-next-footer">
-                  
-<div class="prev-next-area">
-    <a class="left-prev"
-       href="intro.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to COMM475 - Investment Policies | Tactical Asset Allocation</p>
-      </div>
-    </a>
-</div>
-                </footer>
-              
+
+                <footer class="qe-page__footer">
+
+                    <p><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/80x15.png"></a></p>
+
+                    <p>Creative Commons License &ndash; This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International.</p>
+
+                </footer> <!-- .page__footer -->
+
+            </div> <!-- .page -->
+
+            
+
+            
+            <div class="qe-sidebar bd-sidebar inactive" id="site-navigation">
+
+                <div class="qe-sidebar__header">
+
+
+                    Contents
+
+                </div>
+
+                <nav class="qe-sidebar__nav" id="qe-sidebar-nav" aria-label="Main navigation">
+                    <ul class="nav bd-sidenav nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to COMM475 - Investment Policies | Tactical Asset Allocation
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav nav sidenav_l1">
+ <li class="toctree-l1 current active active">
+  <a class="current reference internal" href="#">
+   COMM475
+  </a>
+ </li>
+</ul>
+
+                </nav>
+
+                <div class="qe-sidebar__footer">
+
+                </div>
+
+            </div> <!-- .sidebar -->
+            
+        </div> <!-- .main -->
+
+        <div class="qe-toolbar">
+
+            <div class="qe-toolbar__inner">
+
+                <ul class="qe-toolbar__main">
+                    <li data-tippy-content="Table of Contents" class="btn__sidebar"><i data-feather="menu"></i></li>
+                    <li data-tippy-content="Home"><a href="intro.html"><i data-feather="home"></i></a></li>
+                    <li class="btn__qelogo"><a href="" title=""><span class="show-for-sr"></span></a></li>
+                </ul>
+
+                <ul class="qe-toolbar__links">
+                    <li class="btn__search">
+                        <form action="search.html" method="get">
+                            <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" accesskey="k">
+                            <i data-feather="search" id="search-icon"></i>
+                        </form>
+                    </li>
+                    <li data-tippy-content="Fullscreen" class="btn__fullscreen"><i data-feather="maximize"></i></li>
+                    <li data-tippy-content="Increase font size" class="btn__plus"><i data-feather="plus-circle"></i></li>
+                    <li data-tippy-content="Decrease font size" class="btn__minus"><i data-feather="minus-circle"></i></li>
+                    <li data-tippy-content="Change contrast" class="btn__contrast"><i data-feather="sunset"></i></li>
+                        <li data-tippy-content="Download PDF" onClick="window.print()"><i data-feather="file"></i></li>
+                    <li data-tippy-content="View Source"><a target="_blank" href="https://github.com/executablebooks/jupyter-book/LN_05_Tactical_Asset_Allocation_MR.ipynb" download><i data-feather="github"></i></a></li>
+                </ul>
+
             </div>
-            
-            
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+        </div> <!-- .toolbar -->
+        <div id="downloadPDFModal" style="display: none;">
+            <ul class="pdf-options" style="display: block;">
+                <li class="download-pdf-book" onClick="window.print()">
+                    <p>Lecture (PDF)</p>
+                </li>
+                <li class="download-pdf-file">
+                    <a href="" download><p>Book (PDF)</p></a>
+                </li>
+            </ul>
+        </div>
+        <div id="settingsModal" style="display: none;">
+            <p class="modal-title"> Notebook Launcher </p>
+            <div class="modal-desc">
+            <p>
+                Choose public or private cloud service for "Launch" button.
+            </p>
+            </div>
+            <p class="modal-subtitle">Select a server</p>
+            <ul class="modal-servers">
+            <li class="active launcher-public">
+                <span class="label">Public</span>
+                <select id="launcher-public-input">
+                
+                </select>
+                <i class="fas fa-check-circle"></i>
+            </li>
+            <li class="launcher-private">
+                <span class="label">Private</span>
+                <input type="text" id="launcher-private-input" data-repourl="" data-urlpath="" data-branch=>
+                <i class="fas fa-check-circle"></i>
+            </li>
+            </ul>
+            <p class="launch"><a href="" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
+            <script>
+                // QuantEcon Notebook Launcher
+                const launcherTypeElements = document.querySelectorAll('#settingsModal .modal-servers li');
+                // Highlight the server type if previous selection exists
+                if (typeof localStorage.launcherType !== 'undefined') {
+                  for (var i = 0; i < launcherTypeElements.length; i++) {
+                    launcherTypeElements[i].classList.remove('active');
+                    if ( launcherTypeElements[i].classList.contains(localStorage.launcherType) ) {
+                      launcherTypeElements[i].classList.add('active');
+                    }
+                  }
+                }
+                // Highlight server type on click and set local storage value
+                for (var i = 0; i < launcherTypeElements.length; i++) {
+                  launcherTypeElements[i].addEventListener('click', function() {
+                    for (var j = 0; j < launcherTypeElements.length; j++) {
+                      launcherTypeElements[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+                    if ( this.classList.contains('launcher-private') ) {
+                      localStorage.launcherType = 'launcher-private';
+                    } else if ( this.classList.contains('launcher-public') ) {
+                      localStorage.launcherType = 'launcher-public';
+                    }
+                    setLaunchServer();
+                  })
+                }
+                const launcherPublic = document.getElementById('launcher-public-input');
+                const launcherPrivate = document.getElementById('launcher-private-input');
+                const pageName = "LN_05_Tactical_Asset_Allocation_MR";
+                const repoURL = "";
+                const urlPath = "";
+                const branch = ""
+                const launchNotebookLink = document.getElementById('advancedLaunchButton');
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">COMM475</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#investment-policies-tactical-asset-allocation">Investment Policies: Tactical Asset Allocation</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructor-lorenzo-garlappi">Instructor: Lorenzo Garlappi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tas">TAs:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#martin-rinaldi">Martin Rinaldi</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tina-tian">Tina Tian</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#outline">Outline</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subcategories-of-dynamic-asset-allocation">1. Subcategories of Dynamic Asset Allocation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-basic-contrarian-taa-principle-as-applied-to-taa">2. The Basic ‘‘Contrarian’’ TAA Principle as Applied to TAA</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-models">3. TAA Models</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-taa-measures">4. Practical TAA Measures</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">5. Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#warm-up">Warm up</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-definitions-of-saa-taa-and-iaa">1. TAA: Definitions of SAA, TAA and IAA</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-william-sharpes-characterization-of-saa-taa-and-iaa">TAA: William Sharpe’s characterization of SAA, TAA and IAA</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-following-functions-calculate-k0-k1-and-stock-weight-from-assets-volatility-and-returns">The following functions calculate K0, K1 and stock weight from assets volatility and returns.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suppose-that-the-investor-becomes-more-risk-tolerant-as-his-her-wealth-increases-what-happens-to-the-portfolio-weight-in-stocks-x-st">Suppose that the investor becomes more risk tolerant as his/her wealth increases. What happens to the portfolio weight in stocks, <span class="math notranslate nohighlight">\(X_{st}\)</span>?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-mean-reversion-in-the-stock-index-price-level-negative-serial-correlation-in-stock-index-returns">TAA: Mean Reversion in the Stock Index Price Level (Negative Serial Correlation in Stock Index Returns)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-a-mean-reverting-stock-index">TAA: A Mean-Reverting Stock Index</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-the-general-taa-methodology">2. TAA: The General TAA Methodology</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determining-t-r">Determining <span class="math notranslate nohighlight">\(𝑬_{𝒕}[𝒓_{𝑺}]\)</span></a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-the-fama-french-ff-predictive-model">3. TAA: The Fama-French (FF) Predictive Model</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-fama-french-results">TAA: Fama-French Results</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fama-french-paper-result-1">Fama-French Paper Result 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fama-french-paper-result-2">Fama-French Paper Result 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fama-french-paper-result-3">Fama-French Paper Result 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fama-french-paper-result-4">Fama-French Paper Result 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fama-french-paper-result-5">Fama-French Paper Result 5</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fama-french-paper-result-6">Fama-French Paper Result 6</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fama-french-paper-result-7">Fama-French Paper Result 7</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fama-french-paper-result-7-cont">Fama-French Paper Result 7 (cont.)</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-chen-predictive-model">4. TAA: Chen Predictive Model</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chens-original-analysis">Chen’s original analysis</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-overview-of-risk-factors-used-in-the-chen-predictive-model">An Overview of Risk Factors Used in the Chen Predictive Model</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#predictor-variables">Predictor Variables</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-predictivity-of-risk-factors-on-evw-t-is-as-follows">The predictivity of risk factors on <span class="math notranslate nohighlight">\(EVW_{t}\)</span> is as follows:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-on-risk-factors">Results on risk factors:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#predictivity-of-risk-factors-on-the-growth-rate-of-gnp-is-as-follows">Predictivity of risk factors on the growth rate of GNP is as follows:</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#source-chen1991-table-4-p538">source: Chen1991 Table 4 (p538)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updated-chens-analysis">Updated Chen’s analysis</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-contrarian-taa-versus-momentum-taa">5. TAA: Contrarian TAA Versus Momentum TAA</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-estimating-the-erp-directly">6. TAA: Estimating the ERP Directly</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-erp-directly-a-numerical-example">Estimating the ERP Directly: A Numerical Example</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#taa-a-simple-taa-implementation">7. TAA: A Simple TAA Implementation</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix">Appendix</a></li>
-</ul>
+                // Highlight public server option if previous selection exists
+                if (typeof localStorage.launcherPublic !== 'undefined') {
+                  launcherPublic.value = localStorage.launcherPublic;
+                }
+                // Update local storage upon public server selection
+                launcherPublic.addEventListener('change', (event) => {
+                  setLaunchServer();
+                });
+                // Populate private server input if previous entry exists
+                if (typeof localStorage.launcherPrivate !== 'undefined') {
+                  launcherPrivate.value = localStorage.launcherPrivate;
+                }
+                // Update local storage when a private server is entered
+                launcherPrivate.addEventListener('input', (event) => {
+                  setLaunchServer();
+                });
 
-  </nav></div>
+                // Function to update the "Launch Notebook" link href
+                function setLaunchServer() {
+                  launchNotebookLink.removeAttribute("style")
+                  if ( localStorage.launcherType == 'launcher-private' ) {
+                    let repoPrefix = "/jupyter/hub/user-redirect/git-pull?repo=" + repoURL + "&branch=" + branch + "&urlpath=" + urlPath;
+                    launcherPrivateValue = launcherPrivate.value
+                    if (!launcherPrivateValue) {
+                        launchNotebookLink.removeAttribute("href")
+                        launchNotebookLink.style.background = "grey"
+                        return
+                    }
+                    localStorage.launcherPrivate = launcherPrivateValue;
+                    privateServer = localStorage.launcherPrivate.replace(/\/$/, "")
+                    if (!privateServer.includes("http")) {
+                        privateServer = "http://" + privateServer
+                    }
+                    launchNotebookLinkURL = privateServer + repoPrefix;
+                  } else if ( localStorage.launcherType == 'launcher-public' ) {
+                    launcherPublicValue = launcherPublic.options[launcherPublic.selectedIndex].value;
+                    localStorage.launcherPublic = launcherPublicValue;
+                    launchNotebookLinkURL = localStorage.launcherPublic;
+                  }
+                  if (launchNotebookLinkURL) launchNotebookLink.href = launchNotebookLinkURL;
+                }
+                // Check if user has previously selected a server
+                if ( (typeof localStorage.launcherPrivate !== 'undefined') || (typeof localStorage.launcherPublic !== 'undefined') ) {
+                  setLaunchServer();
+                }
+                </script>
 
-</div></div>
-              
-            
-          </div>
-          <footer class="bd-footer-content">
-            
-<div class="bd-footer-content__inner container">
-  
-  <div class="footer-item">
-    
-<p class="component-author">
-By Lorenzo Garlappi, Martin Rinaldi, and Tina Tian
-</p>
+        </div>
 
-  </div>
-  
-  <div class="footer-item">
-    
-
-  <p class="copyright">
-    
-      © Copyright 2024.
-      <br/>
-    
-  </p>
-
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
-</div>
-          </footer>
-        
-
-      </main>
-    </div>
-  </div>
-  
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
-
-  <footer class="bd-footer">
-  </footer>
+    </div> <!-- .wrapper-->
   </body>
 </html>
