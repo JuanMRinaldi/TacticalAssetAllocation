@@ -1,0 +1,9 @@
+title: COMM475 - Investment Policies | Tactical Asset Allocation
+author: Lorenzo Garlappi, Martin Rinaldi, and Tina Tian
+logo: UBC.jpeg
+copyright: "2024"
+only_build_toc_files: true
+
+sphinx:
+  config:
+    html_theme: quantecon_book_theme

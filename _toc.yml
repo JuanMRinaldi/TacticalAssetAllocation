@@ -1,0 +1,5 @@
+# Table of contents
+format: jb-book
+root: intro
+chapters:
+- file: LN_05_Tactical_Asset_Allocation_MR
