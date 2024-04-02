@@ -1,404 +1,262 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
 
-
-<!DOCTYPE html>
-
-
-<html lang="en" data-content_root="" >
-
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; COMM475 - Investment Policies | Tactical Asset Allocation</title>
-    <script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    
-        <script>
-            MathJax = {
-            loader: {load: ['[tex]/boldsymbol', '[tex]/textmacros']},
-            tex: {
-                packages: {'[+]': ['boldsymbol', 'textmacros']},
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                processEscapes: true,
-                macros: {
-                    "argmax" : "arg\\,max",
-                    "argmin" : "arg\\,min",
-                    "col"    : "col",
-                    "Span"   :  "span",
-                    "epsilon": "\\varepsilon",
-                    "EE": "\\mathbb{E}",
-                    "PP": "\\mathbb{P}",
-                    "RR": "\\mathbb{R}",
-                    "NN": "\\mathbb{N}",
-                    "ZZ": "\\mathbb{Z}",
-                    "aA": "\\mathcal{A}",
-                    "bB": "\\mathcal{B}",
-                    "cC": "\\mathcal{C}",
-                    "dD": "\\mathcal{D}",
-                    "eE": "\\mathcal{E}",
-                    "fF": "\\mathcal{F}",
-                    "gG": "\\mathcal{G}",
-                    "hH": "\\mathcal{H}",
-                }
-            },
-            svg: {
-                fontCache: 'global',
-                scale: 0.92,
-                displayAlign: "center",
-            },
-            };
-        </script>
-    
-    
-  
-  
-  
-  <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
-  </script>
-  
-  <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-
-  
-  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/quantecon-book-theme.css?digest=b09b2da44b9015b4fa76ea072fa2d8f7faee5492" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <!-- Generated with Sphinx 7.2.6 and Furo 2024.01.29 --><title>Index - COMM475 - Investment Policies | Tactical Asset Allocation</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
   
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
 
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="intro.html"><div class="brand">COMM475 - Investment Policies | Tactical Asset Allocation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="intro.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/UBC.jpeg" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">COMM475 - Investment Policies | Tactical Asset Allocation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="LN_05_Tactical_Asset_Allocation_MR.html">Outline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LN_05_Tactical_Asset_Allocation_MR.html#taa-definitions-of-saa-taa-and-iaa">1. TAA: Definitions of SAA, TAA and IAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LN_05_Tactical_Asset_Allocation_MR.html#taa-the-general-taa-methodology">2. TAA: The General TAA Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LN_05_Tactical_Asset_Allocation_MR.html#taa-the-fama-french-ff-predictive-model">3. TAA: The Fama-French (FF) Predictive Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LN_05_Tactical_Asset_Allocation_MR.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="LN_05_Tactical_Asset_Allocation_MR.html#taa-chen-predictive-model">4. TAA: Chen Predictive Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LN_05_Tactical_Asset_Allocation_MR.html#taa-contrarian-taa-versus-momentum-taa">5. TAA: Contrarian TAA Versus Momentum TAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LN_05_Tactical_Asset_Allocation_MR.html#taa-estimating-the-erp-directly">6. TAA: Estimating the ERP Directly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LN_05_Tactical_Asset_Allocation_MR.html#taa-a-simple-taa-implementation">7. TAA: A Simple TAA Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LN_05_Tactical_Asset_Allocation_MR.html#appendix">Appendix</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          
+<section class="genindex-section">
+  <h1 id="index">Index</h1>
+  <div class="genindex-jumpbox"></div>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2024
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=5eb1bb1e"></script>
     <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="_static/scripts/quantecon-book-theme.js?digest=eed9c059a3ee152aae2353ec732f0a6d12e6aa07"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/scripts/furo.js?v=32e29ea5"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
-    <link rel="search" title="Search" href="search.html" />
-
-<!-- Normal Meta Tags -->
-<meta name="author" context="Lorenzo Garlappi, Martin Rinaldi, and Tina Tian" />
-<meta name="keywords" content="" />
-<meta name="description" content= />
-
-<!-- Twitter tags -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@" />
-<meta name="twitter:title" content="Index"/>
-<meta name="twitter:description" content="">
-<meta name="twitter:creator" content="@">
-<meta name="twitter:image" content="">
-
-<!-- Opengraph tags -->
-<meta property="og:title" content="COMM475 - Investment Policies | Tactical Asset Allocation" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="None" />
-<meta property="og:image" content="" />
-<meta property="og:description" content="" />
-<meta property="og:site_name" content="COMM475 - Investment Policies | Tactical Asset Allocation" />
-<meta name="theme-color" content="#ffffff" />
-
-  </head>
-<body>
-
-
-    <span id="top"></span>
-
-    <div class="qe-wrapper">
-
-        <div class="qe-main">
-
-            <div class="qe-page" id=genindex>
-
-                <div class="qe-page__toc">
-
-                    <div class="inner">
-
-                        
-
-
-                        <nav id="bd-toc-nav" class="qe-page__toc-nav">
-                            
-                            <p class="logo">
-                                
-                                    
-                                    <a href="intro.html"><img src="_static/UBC.jpeg" class="logo" alt="logo"></a>
-                                    
-                                
-                            </p>
-
-                            <p class="powered">Powered by <a href="https://jupyterbook.org/">Jupyter Book</a></p>
-
-                        </nav>
-
-                        <div class="qe-page__toc-footer">
-                            
-                            
-                            <p><a href="#top"><strong>Back to top</strong></a></p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="qe-page__header">
-
-                    <div class="qe-page__header-copy">
-
-                        <p class="qe-page__header-heading"><a href="intro.html">COMM475 - Investment Policies | Tactical Asset Allocation</a></p>
-
-                        <p class="qe-page__header-subheading"></p>
-
-                    </div>
-                    <!-- length 2, since its a string and empty dict has length 2 - {} -->
-                        <p class="qe-page__header-authors" font-size="18">Lorenzo Garlappi, Martin Rinaldi, and Tina Tian</p>
-
-
-                </div> <!-- .page__header -->
-
-
-
-                
-                <main class="qe-page__content" role="main">
-                    
-                    <div>
-                        
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
-
-                    </div>
-                    
-                </main> <!-- .page__content -->
-                
-
-
-                <footer class="qe-page__footer">
-
-                    <p><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/80x15.png"></a></p>
-
-                    <p>Creative Commons License &ndash; This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International.</p>
-
-                </footer> <!-- .page__footer -->
-
-            </div> <!-- .page -->
-
-            
-
-            
-            <div class="qe-sidebar bd-sidebar inactive" id="site-navigation">
-
-                <div class="qe-sidebar__header">
-
-
-                    Contents
-
-                </div>
-
-                <nav class="qe-sidebar__nav" id="qe-sidebar-nav" aria-label="Main navigation">
-                    <ul class="nav bd-sidenav nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
-   Welcome to COMM475 - Investment Policies | Tactical Asset Allocation
-  </a>
- </li>
-</ul>
-<ul class="nav bd-sidenav nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="LN_05_Tactical_Asset_Allocation_MR.html">
-   COMM475
-  </a>
- </li>
-</ul>
-
-                </nav>
-
-                <div class="qe-sidebar__footer">
-
-                </div>
-
-            </div> <!-- .sidebar -->
-            
-        </div> <!-- .main -->
-
-        <div class="qe-toolbar">
-
-            <div class="qe-toolbar__inner">
-
-                <ul class="qe-toolbar__main">
-                    <li data-tippy-content="Table of Contents" class="btn__sidebar"><i data-feather="menu"></i></li>
-                    <li data-tippy-content="Home"><a href="intro.html"><i data-feather="home"></i></a></li>
-                    <li class="btn__qelogo"><a href="" title=""><span class="show-for-sr"></span></a></li>
-                </ul>
-
-                <ul class="qe-toolbar__links">
-                    <li class="btn__search">
-                        <form action="search.html" method="get">
-                            <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" accesskey="k">
-                            <i data-feather="search" id="search-icon"></i>
-                        </form>
-                    </li>
-                    <li data-tippy-content="Fullscreen" class="btn__fullscreen"><i data-feather="maximize"></i></li>
-                    <li data-tippy-content="Increase font size" class="btn__plus"><i data-feather="plus-circle"></i></li>
-                    <li data-tippy-content="Decrease font size" class="btn__minus"><i data-feather="minus-circle"></i></li>
-                    <li data-tippy-content="Change contrast" class="btn__contrast"><i data-feather="sunset"></i></li>
-                        <li data-tippy-content="Download PDF" onClick="window.print()"><i data-feather="file"></i></li>
-                    <li data-tippy-content="View Source"><a target="_blank" href="https://github.com/executablebooks/jupyter-book/" download><i data-feather="github"></i></a></li>
-                </ul>
-
-            </div>
-
-        </div> <!-- .toolbar -->
-        <div id="downloadPDFModal" style="display: none;">
-            <ul class="pdf-options" style="display: block;">
-                <li class="download-pdf-book" onClick="window.print()">
-                    <p>Lecture (PDF)</p>
-                </li>
-                <li class="download-pdf-file">
-                    <a href="" download><p>Book (PDF)</p></a>
-                </li>
-            </ul>
-        </div>
-        <div id="settingsModal" style="display: none;">
-            <p class="modal-title"> Notebook Launcher </p>
-            <div class="modal-desc">
-            <p>
-                Choose public or private cloud service for "Launch" button.
-            </p>
-            </div>
-            <p class="modal-subtitle">Select a server</p>
-            <ul class="modal-servers">
-            <li class="active launcher-public">
-                <span class="label">Public</span>
-                <select id="launcher-public-input">
-                
-                </select>
-                <i class="fas fa-check-circle"></i>
-            </li>
-            <li class="launcher-private">
-                <span class="label">Private</span>
-                <input type="text" id="launcher-private-input" data-repourl="" data-urlpath="" data-branch=>
-                <i class="fas fa-check-circle"></i>
-            </li>
-            </ul>
-            <p class="launch"><a href="" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
-            <script>
-                // QuantEcon Notebook Launcher
-                const launcherTypeElements = document.querySelectorAll('#settingsModal .modal-servers li');
-                // Highlight the server type if previous selection exists
-                if (typeof localStorage.launcherType !== 'undefined') {
-                  for (var i = 0; i < launcherTypeElements.length; i++) {
-                    launcherTypeElements[i].classList.remove('active');
-                    if ( launcherTypeElements[i].classList.contains(localStorage.launcherType) ) {
-                      launcherTypeElements[i].classList.add('active');
-                    }
-                  }
-                }
-                // Highlight server type on click and set local storage value
-                for (var i = 0; i < launcherTypeElements.length; i++) {
-                  launcherTypeElements[i].addEventListener('click', function() {
-                    for (var j = 0; j < launcherTypeElements.length; j++) {
-                      launcherTypeElements[j].classList.remove('active');
-                    }
-                    this.classList.add('active');
-                    if ( this.classList.contains('launcher-private') ) {
-                      localStorage.launcherType = 'launcher-private';
-                    } else if ( this.classList.contains('launcher-public') ) {
-                      localStorage.launcherType = 'launcher-public';
-                    }
-                    setLaunchServer();
-                  })
-                }
-                const launcherPublic = document.getElementById('launcher-public-input');
-                const launcherPrivate = document.getElementById('launcher-private-input');
-                const pageName = "genindex";
-                const repoURL = "";
-                const urlPath = "";
-                const branch = ""
-                const launchNotebookLink = document.getElementById('advancedLaunchButton');
-
-                // Highlight public server option if previous selection exists
-                if (typeof localStorage.launcherPublic !== 'undefined') {
-                  launcherPublic.value = localStorage.launcherPublic;
-                }
-                // Update local storage upon public server selection
-                launcherPublic.addEventListener('change', (event) => {
-                  setLaunchServer();
-                });
-                // Populate private server input if previous entry exists
-                if (typeof localStorage.launcherPrivate !== 'undefined') {
-                  launcherPrivate.value = localStorage.launcherPrivate;
-                }
-                // Update local storage when a private server is entered
-                launcherPrivate.addEventListener('input', (event) => {
-                  setLaunchServer();
-                });
-
-                // Function to update the "Launch Notebook" link href
-                function setLaunchServer() {
-                  launchNotebookLink.removeAttribute("style")
-                  if ( localStorage.launcherType == 'launcher-private' ) {
-                    let repoPrefix = "/jupyter/hub/user-redirect/git-pull?repo=" + repoURL + "&branch=" + branch + "&urlpath=" + urlPath;
-                    launcherPrivateValue = launcherPrivate.value
-                    if (!launcherPrivateValue) {
-                        launchNotebookLink.removeAttribute("href")
-                        launchNotebookLink.style.background = "grey"
-                        return
-                    }
-                    localStorage.launcherPrivate = launcherPrivateValue;
-                    privateServer = localStorage.launcherPrivate.replace(/\/$/, "")
-                    if (!privateServer.includes("http")) {
-                        privateServer = "http://" + privateServer
-                    }
-                    launchNotebookLinkURL = privateServer + repoPrefix;
-                  } else if ( localStorage.launcherType == 'launcher-public' ) {
-                    launcherPublicValue = launcherPublic.options[launcherPublic.selectedIndex].value;
-                    localStorage.launcherPublic = launcherPublicValue;
-                    launchNotebookLinkURL = localStorage.launcherPublic;
-                  }
-                  if (launchNotebookLinkURL) launchNotebookLink.href = launchNotebookLinkURL;
-                }
-                // Check if user has previously selected a server
-                if ( (typeof localStorage.launcherPrivate !== 'undefined') || (typeof localStorage.launcherPublic !== 'undefined') ) {
-                  setLaunchServer();
-                }
-                </script>
-
-        </div>
-
-    </div> <!-- .wrapper-->
-  </body>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    </body>
 </html>
