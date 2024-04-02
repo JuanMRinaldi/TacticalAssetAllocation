@@ -7,3 +7,9 @@ only_build_toc_files: true
 sphinx:
   config:
     html_theme: "furo"
+
+launch_buttons:
+  binderhub_url: "https://mybinder.org"
+  repository_url: "https://github.com/JuanMRinaldi/TacticalAssetAllocation"
+  path_to_docs: "_sources/LN_05_Tactical_Asset_Allocation_MR.ipynb" 
+  branch: "gh-pages"
