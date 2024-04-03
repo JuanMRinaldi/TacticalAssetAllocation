@@ -1,14 +1,11 @@
-matplotlib
 numpy
 pandas
 matplotlib
 seaborn
 statsmodels
-scikit-learn
 wrds
 pandas-datareader
-<<<<<<< HEAD
+scipy
+scikit-learn
 tabulate
-=======
-tabulate
->>>>>>> 4b0a3011d995346f97754171338c154fedb16f79
+ipython 
