@@ -6,4 +6,4 @@ Link to the book: [![JB](https://github.com/executablebooks/jupyter-book/raw/mas
 
 2. **Binder**: This is your interactive book. If you run the cells in order, you will be able to experiment with any changes you may like from your browser with no need of setting up the environment locally.
 
-Link to Binder: [![Binder](https://mybinder.org/badge_logo.svg)]([https://mybinder.org/v2/gh/JuanMRinaldi/TacticalAssetAllocation/HEAD](https://notebooks.gesis.org/binder/jupyter/user/juanmrinaldi-ta-assetallocation-54v23yqt/doc/tree/_sources/LN_05_Tactical_Asset_Allocation_MR.ipynb))
+Link to Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JuanMRinaldi/TacticalAssetAllocation/main?labpath=LN_05_Tactical_Asset_Allocation_MR.ipynb)
