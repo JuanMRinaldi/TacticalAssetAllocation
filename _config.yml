@@ -7,9 +7,14 @@ only_build_toc_files: true
 sphinx:
   config:
     html_theme: "furo"
+    html_theme_options:
+      logo_only: true
+      navigation_depth: 4
 
 launch_buttons:
   binderhub_url: "https://mybinder.org"
   repository_url: "https://github.com/JuanMRinaldi/TacticalAssetAllocation"
-  path_to_docs: "_sources/LN_05_Tactical_Asset_Allocation_MR.ipynb" 
+  path_to_binder: "_sources/LN_05_Tactical_Asset_Allocation_MR.ipynb"
   branch: "gh-pages"
+  notebook_interface: "jupyterlab"
+
