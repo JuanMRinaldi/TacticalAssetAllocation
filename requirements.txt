@@ -1,3 +1,10 @@
-jupyter-book
 matplotlib
 numpy
+pandas
+matplotlib
+seaborn
+statsmodels
+scikit-learn
+wrds
+pandas-datareader
+tabulate
